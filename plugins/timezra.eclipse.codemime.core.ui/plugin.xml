@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="timezra.eclipse.codemime.core.ui.preferences.PreferencePage"
+            id="timezra.eclipse.codemime.core.ui.preferences.preferencePage"
+            category="org.eclipse.ui.preferencePages.GeneralTextEditor"
+            name="%preferencePageName">
+            <keywordReference id="org.eclipse.ui.editors.spelling"/>
+      </page>
+   </extension>
+   
+   <extension
+      point="org.eclipse.ui.keywords">
+      <keyword
+            label="%preferenceKeywords.codemime"
+            id="timezra.eclipse.codemime.core.ui.keywords"/>
+   </extension>
+   
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="timezra.eclipse.codemime.core.ui.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+
+</plugin>

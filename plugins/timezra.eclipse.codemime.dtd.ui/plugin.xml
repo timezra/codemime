@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="timezra.eclipse.codemime.dtd.ui.dtdFile"
+            nameFilter="*.dtd"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="timezra.eclipse.codemime.dtd.ui.actions.CopyToClipboardDTDFileAction"
+               enablesFor="1"
+               id="timezra.eclipse.codemime.dtd.ui.actions.copyToClipboardDTDFileAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.dtd.ui.dtdFileMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.dtd.ui.dtdFileMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </objectContribution>
+      <viewerContribution
+            id="timezra.eclipse.codemime.dtd.ui.dtdEditor"
+            targetID="org.eclipse.wst.dtd.core.dtdsource.source.EditorContext">
+         <action
+               class="timezra.eclipse.codemime.dtd.ui.actions.CopyToClipboardDTDEditorAction"
+               id="timezra.eclipse.codemime.dtd.ui.actions.copyToClipboardDTDEditorAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.dtd.ui.dtdEditorMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.dtd.ui.dtdEditorMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </viewerContribution>
+   </extension>
+
+</plugin>

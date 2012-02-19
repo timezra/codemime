@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="timezra.eclipse.codemime.ant.ui.antFile"
+            nameFilter="build.xml"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="timezra.eclipse.codemime.ant.ui.actions.CopyToClipboardAntFileAction"
+               enablesFor="1"
+               id="timezra.eclipse.codemime.ant.ui.actions.copyToClipboardAntFileAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.ant.ui.antFileMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.ant.ui.antFileMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </objectContribution>
+      <viewerContribution
+            id="timezra.eclipse.codemime.ant.ui.antEditor"
+            targetID="org.eclipse.ant.internal.ui.editor.AntEditor">
+         <action
+               class="timezra.eclipse.codemime.ant.ui.actions.CopyToClipboardAntEditorAction"
+               id="timezra.eclipse.codemime.ant.ui.actions.copyToClipboardAntEditorAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.ant.ui.antEditorMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.ant.ui.antEditorMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </viewerContribution>
+   </extension>
+
+</plugin>

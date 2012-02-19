@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>timezra.eclipse.codemime.plugins</artifactId>
+	<packaging>pom</packaging>
+	<name>timezra.eclipse.codemime.plugins</name>
+	<description>Parent project for the timezra.eclipse.codemime plug-in and fragment projects</description>
+
+	<parent>
+		<groupId>timezra.eclipse</groupId>
+		<artifactId>timezra.eclipse.codemime.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<properties>
+		<maven.compiler.source>1.6</maven.compiler.source>
+		<maven.compiler.target>1.6</maven.compiler.target>
+	</properties>
+
+	<profiles>
+		<profile>
+			<id>sign</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jarsigner-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.eclipse.tycho</groupId>
+				<artifactId>tycho-source-plugin</artifactId>
+				<version>${tycho-version}</version>
+				<executions>
+					<execution>
+						<id>plugin-source</id>
+						<goals>
+							<goal>plugin-source</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+  <modules>
+    <module>timezra.eclipse.codemime.core</module>
+    <module>timezra.eclipse.codemime.tests</module>
+    <module>timezra.eclipse.codemime.core.tests</module>
+    <module>timezra.eclipse.codemime.core.ui</module>
+    <module>timezra.eclipse.codemime.core.ui.tests</module>
+    <module>timezra.eclipse.codemime.ant.core</module>
+    <module>timezra.eclipse.codemime.ant.core.tests</module>
+    <module>timezra.eclipse.codemime.ant.ui</module>
+    <module>timezra.eclipse.codemime.ant.ui.tests</module>
+    <module>timezra.eclipse.codemime.sse.core</module>
+    <module>timezra.eclipse.codemime.sse.core.tests</module>
+    <module>timezra.eclipse.codemime.css.core</module>
+    <module>timezra.eclipse.codemime.css.core.tests</module>
+    <module>timezra.eclipse.codemime.css.ui</module>
+    <module>timezra.eclipse.codemime.css.ui.tests</module>
+    <module>timezra.eclipse.codemime.dtd.core</module>
+    <module>timezra.eclipse.codemime.dtd.core.tests</module>
+    <module>timezra.eclipse.codemime.dtd.ui</module>
+    <module>timezra.eclipse.codemime.dtd.ui.tests</module>
+    <module>timezra.eclipse.codemime.html.core</module>
+    <module>timezra.eclipse.codemime.html.core.tests</module>
+    <module>timezra.eclipse.codemime.html.ui</module>
+    <module>timezra.eclipse.codemime.html.ui.tests</module>
+    <module>timezra.eclipse.codemime.xml.core</module>
+    <module>timezra.eclipse.codemime.xml.core.tests</module>
+    <module>timezra.eclipse.codemime.xml.ui</module>
+    <module>timezra.eclipse.codemime.xml.ui.tests</module>
+    <module>timezra.eclipse.codemime.properties.core</module>
+    <module>timezra.eclipse.codemime.properties.core.tests</module>
+    <module>timezra.eclipse.codemime.properties.ui</module>
+    <module>timezra.eclipse.codemime.properties.ui.tests</module>
+    <module>timezra.eclipse.codemime.java.core</module>
+    <module>timezra.eclipse.codemime.java.tests</module>
+    <module>timezra.eclipse.codemime.java.core.tests</module>
+    <module>timezra.eclipse.codemime.java.ui</module>
+    <module>timezra.eclipse.codemime.java.ui.tests</module>
+    <module>timezra.eclipse.codemime.groovy.core</module>
+    <module>timezra.eclipse.codemime.groovy.core.tests</module>
+    <module>timezra.eclipse.codemime.groovy.ui</module>
+    <module>timezra.eclipse.codemime.groovy.ui.tests</module>
+    <module>timezra.eclipse.codemime.js.core</module>
+    <module>timezra.eclipse.codemime.js.core.tests</module>
+    <module>timezra.eclipse.codemime.js.ui</module>
+    <module>timezra.eclipse.codemime.js.ui.tests</module>
+  </modules>
+</project>

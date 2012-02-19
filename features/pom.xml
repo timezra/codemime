@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<artifactId>timezra.eclipse.codemime.features</artifactId>
+	<packaging>pom</packaging>
+	<name>timezra.eclipse.codemime.features</name>
+	<description>Parent project for the timezra.eclipse.codemime feature projects</description>
+
+	<parent>
+		<groupId>timezra.eclipse</groupId>
+		<artifactId>timezra.eclipse.codemime.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<profiles>
+		<profile>
+			<id>sign</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jarsigner-plugin</artifactId>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+  <modules>
+    <module>timezra.eclipse.codemime.core.feature</module>
+    <module>timezra.eclipse.codemime.core.source.feature</module>
+    <module>timezra.eclipse.codemime.ant.feature</module>
+    <module>timezra.eclipse.codemime.ant.source.feature</module>
+    <module>timezra.eclipse.codemime.sse.feature</module>
+    <module>timezra.eclipse.codemime.sse.source.feature</module>
+    <module>timezra.eclipse.codemime.css.feature</module>
+    <module>timezra.eclipse.codemime.css.source.feature</module>
+    <module>timezra.eclipse.codemime.dtd.feature</module>
+    <module>timezra.eclipse.codemime.dtd.source.feature</module>
+    <module>timezra.eclipse.codemime.html.feature</module>
+    <module>timezra.eclipse.codemime.html.source.feature</module>
+    <module>timezra.eclipse.codemime.xml.feature</module>
+    <module>timezra.eclipse.codemime.xml.source.feature</module>
+    <module>timezra.eclipse.codemime.properties.feature</module>
+    <module>timezra.eclipse.codemime.properties.source.feature</module>
+    <module>timezra.eclipse.codemime.java.feature</module>
+    <module>timezra.eclipse.codemime.java.source.feature</module>
+    <module>timezra.eclipse.codemime.groovy.feature</module>
+    <module>timezra.eclipse.codemime.groovy.source.feature</module>
+    <module>timezra.eclipse.codemime.js.feature</module>
+    <module>timezra.eclipse.codemime.js.source.feature</module>
+  </modules>
+</project>

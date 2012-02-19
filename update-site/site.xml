@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <description name="Code Mime Update Site" url="http://timezra.github.com/codemime">
+      Code Mime Update Site
+   </description>
+   <feature url="features/timezra.eclipse.codemime.core.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.core.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.core_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.core.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.core.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.core_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.core_category" label="Code Mime Core">
+      <description>
+         Code Mime Core
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.sse.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.sse.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.sse_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.sse.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.sse.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.sse_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.sse_category" label="Code Mime for WST SSE">
+      <description>
+         Code Mime for WST SSE
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.ant.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.ant.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.ant_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.ant.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.ant.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.ant_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.ant_category" label="Code Mime for Ant">
+      <description>
+         Code Mime for Ant
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.css.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.css.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.css_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.css.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.css.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.css_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.css_category" label="Code Mime for CSS">
+      <description>
+         Code Mime for CSS
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.dtd.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.dtd.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.dtd_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.dtd.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.dtd.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.dtd_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.dtd_category" label="Code Mime for DTD">
+      <description>
+         Code Mime for DTD
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.html.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.html.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.html_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.html.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.html.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.html_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.html_category" label="Code Mime for HTML">
+      <description>
+         Code Mime for HTML
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.xml.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.xml.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.xml_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.xml.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.xml.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.xml_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.xml_category" label="Code Mime for XML">
+      <description>
+         Code Mime for XML
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.properties.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.properties.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.properties_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.properties.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.properties.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.properties_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.properties_category" label="Code Mime for Properties">
+      <description>
+         Code Mime for Properties
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.java.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.java.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.java_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.java.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.java.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.java_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.java_category" label="Code Mime for Java">
+      <description>
+         Code Mime for Java
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.groovy.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.groovy.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.groovy_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.groovy.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.groovy.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.groovy_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.groovy_category" label="Code Mime for Groovy">
+      <description>
+         Code Mime for Groovy
+      </description>
+   </category-def>
+   <feature url="features/timezra.eclipse.codemime.js.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.js.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.js_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.js.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.js.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.js_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.js_category" label="Code Mime for JavaScript">
+      <description>
+         Code Mime for JavaScript
+      </description>
+   </category-def>
+</site>

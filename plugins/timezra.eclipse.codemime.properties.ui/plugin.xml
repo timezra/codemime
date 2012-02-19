@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="timezra.eclipse.codemime.properties.ui.propertiesFile"
+            nameFilter="*.properties"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="timezra.eclipse.codemime.properties.ui.actions.CopyToClipboardPropertiesFileAction"
+               enablesFor="1"
+               id="timezra.eclipse.codemime.properties.ui.actions.copyToClipboardPropertiesFileAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.properties.ui.propertiesFileMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.properties.ui.propertiesFileMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </objectContribution>
+      <viewerContribution
+            id="timezra.eclipse.codemime.properties.ui.propertiesEditor"
+            targetID="org.eclipse.jdt.ui.PropertiesFileEditor.EditorContext">
+         <action
+               class="timezra.eclipse.codemime.properties.ui.actions.CopyToClipboardPropertiesEditorAction"
+               id="timezra.eclipse.codemime.properties.ui.actions.copyToClipboardPropertiesEditorAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.properties.ui.propertiesEditorMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.properties.ui.propertiesEditorMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </viewerContribution>
+   </extension>
+
+</plugin>

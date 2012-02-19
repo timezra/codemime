@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="timezra.eclipse.codemime.css.ui.cssFile"
+            nameFilter="*.css"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="timezra.eclipse.codemime.css.ui.actions.CopyToClipboardCSSFileAction"
+               enablesFor="1"
+               id="timezra.eclipse.codemime.css.ui.actions.copyToClipboardCSSFileAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.css.ui.cssFileMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.css.ui.cssFileMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </objectContribution>
+      <viewerContribution
+            id="timezra.eclipse.codemime.css.ui.cssEditor"
+            targetID="org.eclipse.wst.css.core.csssource.source.EditorContext">
+         <action
+               class="timezra.eclipse.codemime.css.ui.actions.CopyToClipboardCSSEditorAction"
+               id="timezra.eclipse.codemime.css.ui.actions.copyToClipboardCSSEditorAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.css.ui.cssEditorMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.css.ui.cssEditorMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </viewerContribution>
+   </extension>
+
+</plugin>

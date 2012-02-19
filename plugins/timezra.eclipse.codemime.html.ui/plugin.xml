@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            id="timezra.eclipse.codemime.html.ui.htmlFile"
+            nameFilter="*.html"
+            objectClass="org.eclipse.core.resources.IFile">
+         <action
+               class="timezra.eclipse.codemime.html.ui.actions.CopyToClipboardHTMLFileAction"
+               enablesFor="1"
+               id="timezra.eclipse.codemime.html.ui.actions.copyToClipboardHTMLFileAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.html.ui.htmlFileMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.html.ui.htmlFileMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </objectContribution>
+      <viewerContribution
+            id="timezra.eclipse.codemime.html.ui.htmlEditor"
+            targetID="org.eclipse.wst.html.core.htmlsource.source.EditorContext">
+         <action
+               class="timezra.eclipse.codemime.html.ui.actions.CopyToClipboardHTMLEditorAction"
+               id="timezra.eclipse.codemime.html.ui.actions.copyToClipboardHTMLEditorAction"
+               label="%copyToClipboardActionLabel"
+               menubarPath="timezra.eclipse.codemime.html.ui.htmlEditorMenu/defaultGroup">
+         </action>
+         <menu
+               id="timezra.eclipse.codemime.html.ui.htmlEditorMenu"
+               label="%codemimeMenuLabel"
+               path="additions">
+            <groupMarker
+                  name="defaultGroup">
+            </groupMarker>
+         </menu>
+      </viewerContribution>
+   </extension>
+
+</plugin>

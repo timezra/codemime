@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="timezra.eclipse.codemime.dtd.source.feature"
+      label="%featureName"
+      version="1.0.0.qualifier"
+      provider-name="%providerName">
+
+   <description>
+      %description
+   </description>
+
+   <copyright>
+      %copyright
+   </copyright>
+
+   <license url="%licenseURL">
+      %license
+   </license>
+
+   <url>
+      <update label="%updateSiteName" url="http://timezra.github.com/codemime"/>
+      <discovery label="%updateSiteName" url="http://timezra.github.com/codemime"/>
+   </url>
+
+   <includes
+         id="timezra.eclipse.codemime.core.source.feature"
+         version="0.0.0"/>
+
+   <includes
+         id="timezra.eclipse.codemime.sse.source.feature"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="org.eclipse.ui" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.runtime" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.jface.text" version="3.5.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.core" version="1.0.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.sse.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.sse.ui" version="1.3.0" match="compatible"/>
+      <import plugin="org.junit4" version="4.5.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.dtd.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.resources" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.editors" version="3.5.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.core.ui" version="1.0.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.dtd.ui" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.wst.dtd.ui" version="1.0.0" match="compatible"/>
+   </requires>
+
+   <plugin
+         id="timezra.eclipse.codemime.dtd.core"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="timezra.eclipse.codemime.dtd.core.tests"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="timezra.eclipse.codemime.dtd.core.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="timezra.eclipse.codemime.dtd.core.tests.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="timezra.eclipse.codemime.dtd.ui"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="timezra.eclipse.codemime.dtd.ui.tests"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+   <plugin
+         id="timezra.eclipse.codemime.dtd.ui.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="timezra.eclipse.codemime.dtd.ui.tests.source"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         fragment="true"
+         unpack="false"/>
+
+</feature>
