@@ -25,5 +25,11 @@
             class="timezra.eclipse.codemime.core.ui.preferences.PreferenceInitializer">
       </initializer>
    </extension>
-
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="timezra.eclipse.codemime.core.ui.category"
+            name="%commandCategory">
+      </category>
+   </extension>
 </plugin>

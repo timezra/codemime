@@ -83,7 +83,7 @@ public abstract class AbstractHtmlGenerator implements HtmlGenerator {
 				continue;
 			}
 
-			final StringBuffer builder = new StringBuffer();
+			final StringBuilder builder = new StringBuilder();
 			builder.append("<span style=\"");
 
 			switch (styleRange.fontStyle) {

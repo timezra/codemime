@@ -16,5 +16,5 @@ Require-Bundle: org.eclipse.ui;bundle-version="[3.5.0,4.0.0)",
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Export-Package: timezra.eclipse.codemime.core.ui,
- timezra.eclipse.codemime.core.ui.actions,
+ timezra.eclipse.codemime.core.ui.commands,
  timezra.eclipse.codemime.core.ui.preferences

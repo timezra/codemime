@@ -2,6 +2,8 @@ README
 
 This project is a fork of the cs4eclipse (http://sourceforge.net/projects/cs4eclipse/) with various improvements (e.g., automated testing, re-factorings of duplicated code, upgrades based on more recent eclipse standards, additional plug-ins).
 
+The purpose of this project is to provide a means of copying syntax-colored files/text blocks (e.g., Java code) into other formats (e.g., HTML).
+
 This project is based on this maven archetype: http://github.com/timezra/tycho_new_plugin_project
 
 This project can be built from the root pom with standard Maven commands, e.g.,
