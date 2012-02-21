@@ -25,7 +25,8 @@
             commandId="timezra.eclipse.codemime.xml.ui.commands.copyFileAsHtml">
       </handler>
    </extension>
-   <!-- FIXME: This binding is currently causing a conflict with the Copy HTML As HTML binding -->
+   
+   <!-- FIXME: need to find a better way to bind the command to a key sequence
    <extension
          point="org.eclipse.ui.bindings">
       <key
@@ -35,6 +36,7 @@
             sequence="M1+M2+M H">
       </key>
    </extension>
+   -->
    <extension
          point="org.eclipse.ui.menus">
       <menuContribution

@@ -101,6 +101,11 @@
 			<layout>p2</layout>
 			<url>http://dist.springsource.org/release/GRECLIPSE/e3.7/</url>
 		</repository>
+		<repository>
+			<id>m2e</id>
+			<layout>p2</layout>
+			<url>http://m2eclipse.sonatype.org/sites/m2e/</url>
+		</repository>
 	</repositories>
 	
 	<modules>

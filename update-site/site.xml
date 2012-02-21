@@ -124,4 +124,15 @@
          Code Mime for JavaScript
       </description>
    </category-def>
+   <feature url="features/timezra.eclipse.codemime.maven.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.maven.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.maven_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.maven.source.feature_1.0.0.qualifier.jar" id="timezra.eclipse.codemime.maven.source.feature" version="1.0.0.qualifier">
+      <category name="timezra.eclipse.codemime.maven_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.maven_category" label="Code Mime for Maven">
+      <description>
+         Code Mime for Maven
+      </description>
+   </category-def>
 </site>
