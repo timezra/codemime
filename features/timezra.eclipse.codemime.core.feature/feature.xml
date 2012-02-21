@@ -23,10 +23,13 @@
    </url>
 
    <requires>
-      <import plugin="org.eclipse.ui" version="3.7.0" match="compatible"/>
-      <import plugin="org.eclipse.core.runtime" version="3.7.0" match="compatible"/>
       <import plugin="org.eclipse.text" version="3.5.0" match="compatible"/>
-      <import plugin="org.eclipse.jface.text" version="3.7.0" match="compatible"/>
+      <import plugin="org.eclipse.ui" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.runtime" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.jface.text" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.core.resources" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.editors" version="3.5.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.core" version="1.0.0" match="greaterOrEqual"/>
    </requires>
 
    <plugin

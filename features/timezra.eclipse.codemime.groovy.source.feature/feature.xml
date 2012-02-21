@@ -26,30 +26,17 @@
          id="timezra.eclipse.codemime.core.source.feature"
          version="0.0.0"/>
 
-   <requires>
-      <import plugin="org.eclipse.ui" version="3.5.0" match="compatible"/>
-      <import plugin="org.eclipse.core.runtime" version="3.5.0" match="compatible"/>
-      <import plugin="org.eclipse.core.resources" version="3.5.0" match="compatible"/>
-      <import plugin="org.eclipse.jface.text" version="3.5.0" match="compatible"/>
-      <import plugin="timezra.eclipse.codemime.core" version="1.0.0" match="compatible"/>
-      <import plugin="org.eclipse.jdt.ui" version="3.5.0" match="compatible"/>
-      <import plugin="org.junit4" version="4.5.0" match="compatible"/>
-      <import plugin="timezra.eclipse.codemime.groovy.core" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.eclipse.ui.editors" version="3.5.0" match="compatible"/>
-      <import plugin="org.eclipse.jdt.core" version="3.5.0" match="compatible"/>
-      <import plugin="timezra.eclipse.codemime.core.ui" version="1.0.0" match="compatible"/>
-      <import plugin="timezra.eclipse.codemime.groovy.ui" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="org.codehaus.groovy.eclipse.core" version="2.5.0" match="compatible"/>
-      <import plugin="org.codehaus.groovy.eclipse.ui" version="2.5.0" match="compatible"/>
-      <import plugin="org.eclipse.ui.ide" version="3.5.0" match="compatible"/>
-   </requires>
+   <includes
+         id="timezra.eclipse.codemime.groovy.feature"
+         version="0.0.0"/>
 
-   <plugin
-         id="timezra.eclipse.codemime.groovy.core"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+   <requires>
+      <import plugin="org.junit4" version="4.5.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.tests" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="timezra.eclipse.codemime.java.tests" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="timezra.eclipse.codemime.groovy.core" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="timezra.eclipse.codemime.groovy.ui" version="1.0.0" match="greaterOrEqual"/>
+   </requires>
 
    <plugin
          id="timezra.eclipse.codemime.groovy.core.tests"
@@ -72,13 +59,6 @@
          install-size="0"
          version="0.0.0"
          fragment="true"
-         unpack="false"/>
-
-   <plugin
-         id="timezra.eclipse.codemime.groovy.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
          unpack="false"/>
 
    <plugin
