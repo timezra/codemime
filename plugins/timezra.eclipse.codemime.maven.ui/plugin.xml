@@ -42,11 +42,14 @@
             allPopups="false"
             locationURI="popup:org.maven.ide.eclipse.pomFile.source.EditorContext?after=group.edit">
          <menu
+               icon="icons/full/etool16/copy_as_html_edit.gif"
                id="timezra.eclipse.codemime.maven.ui.copyTextAs"
                label="%copyAsLabel"
                mnemonic="C">
             <command
                   commandId="timezra.eclipse.codemime.maven.ui.commands.copyTextAsHtml"
+                  disabledIcon="icons/full/dtool16/copy_as_html_edit.gif"
+                  icon="icons/full/etool16/copy_as_html_edit.gif"
                   mnemonic="H">
             </command>
          </menu>
@@ -55,11 +58,14 @@
             allPopups="false"
             locationURI="popup:org.eclipse.ui.popup.any?after=group.edit">
          <menu
+               icon="icons/full/etool16/copy_as_html_edit.gif"
                id="timezra.eclipse.codemime.ui.copyFileAsHtmlMenu"
                label="%copyAsLabel"
                mnemonic="C">
             <command
                   commandId="timezra.eclipse.codemime.maven.ui.commands.copyFileAsHtml"
+                  disabledIcon="icons/full/dtool16/copy_as_html_edit.gif"
+                  icon="icons/full/etool16/copy_as_html_edit.gif"
                   mnemonic="H">
                <visibleWhen
                      checkEnabled="false">

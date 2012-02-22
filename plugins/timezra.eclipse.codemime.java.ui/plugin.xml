@@ -44,11 +44,14 @@
             allPopups="false"
             locationURI="popup:#CompilationUnitEditorContext?after=group.edit">
          <menu
+               icon="icons/full/etool16/copy_as_html_edit.gif"
                id="timezra.eclipse.codemime.java.ui.copyTextAs"
                label="%copyAsLabel"
                mnemonic="C">
             <command
                   commandId="timezra.eclipse.codemime.java.ui.commands.copyTextAsHtml"
+                  disabledIcon="icons/full/dtool16/copy_as_html_edit.gif"
+                  icon="icons/full/etool16/copy_as_html_edit.gif"
                   mnemonic="H">
             </command>
          </menu>
@@ -57,11 +60,14 @@
             allPopups="false"
             locationURI="popup:org.eclipse.ui.popup.any?after=group.edit">
          <menu
+               icon="icons/full/etool16/copy_as_html_edit.gif"
                id="timezra.eclipse.codemime.java.ui.copyFileAs"
                label="%copyAsLabel"
                mnemonic="C">
             <command
                   commandId="timezra.eclipse.codemime.java.ui.commands.copyFileAsHtml"
+                  disabledIcon="icons/full/dtool16/copy_as_html_edit.gif"
+                  icon="icons/full/etool16/copy_as_html_edit.gif"
                   mnemonic="H">
                <visibleWhen
                      checkEnabled="false">

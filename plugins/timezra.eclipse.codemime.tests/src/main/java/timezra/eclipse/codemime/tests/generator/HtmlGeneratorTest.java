@@ -60,8 +60,6 @@ public abstract class HtmlGeneratorTest {
 
 		final String theExpectedHtml = getTheExpectedHtml();
 
-		System.out.println(theActualHtml);
-
 		assertThat(theActualHtml, is(theExpectedHtml));
 	}
 
@@ -71,7 +69,6 @@ public abstract class HtmlGeneratorTest {
 
 	protected final IFile createAFile(final IContainer theFolder, final String name) throws CoreException {
 		final IFile theFile = theFolder.getFile(Path.fromPortableString(name));
-		System.out.println(getTheFileContents());
 		theFile.create(new ByteArrayInputStream(getTheFileContents().getBytes()), true, NULL_PROGRESS_MONITOR);
 		return theFile;
 	}
