@@ -2,7 +2,7 @@
 <feature
       id="timezra.eclipse.codemime.groovy.feature"
       label="%featureName"
-      version="1.0.0.qualifier"
+      version="1.0.1.qualifier"
       provider-name="%providerName">
 
    <description>
@@ -31,15 +31,15 @@
       <import plugin="org.eclipse.core.runtime" version="3.5.0" match="compatible"/>
       <import plugin="org.eclipse.core.resources" version="3.5.0" match="compatible"/>
       <import plugin="org.eclipse.jface.text" version="3.5.0" match="compatible"/>
-      <import plugin="timezra.eclipse.codemime.core" version="1.0.0" match="compatible"/>
       <import plugin="org.eclipse.jdt.ui" version="3.5.0" match="compatible"/>
-      <import plugin="org.eclipse.ui.editors" version="3.5.0" match="compatible"/>
-      <import plugin="org.eclipse.jdt.core" version="3.5.0" match="compatible"/>
-      <import plugin="timezra.eclipse.codemime.core.ui" version="1.0.0" match="compatible"/>
-      <import plugin="timezra.eclipse.codemime.groovy.core" version="1.0.0" match="greaterOrEqual"/>
       <import plugin="org.codehaus.groovy.eclipse.core" version="2.5.0" match="compatible"/>
       <import plugin="org.codehaus.groovy.eclipse.ui" version="2.5.0" match="compatible"/>
+      <import plugin="org.eclipse.ui.editors" version="3.5.0" match="compatible"/>
       <import plugin="org.eclipse.ui.ide" version="3.5.0" match="compatible"/>
+      <import plugin="org.eclipse.jdt.core" version="3.5.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.core" version="1.0.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.core.ui" version="1.0.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.groovy.core" version="1.0.0" match="compatible"/>
    </requires>
 
    <plugin

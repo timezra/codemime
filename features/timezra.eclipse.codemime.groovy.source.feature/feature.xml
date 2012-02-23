@@ -2,7 +2,7 @@
 <feature
       id="timezra.eclipse.codemime.groovy.source.feature"
       label="%featureName"
-      version="1.0.0.qualifier"
+      version="1.0.1.qualifier"
       provider-name="%providerName">
 
    <description>
@@ -32,10 +32,10 @@
 
    <requires>
       <import plugin="org.junit4" version="4.5.0" match="compatible"/>
-      <import plugin="timezra.eclipse.codemime.tests" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="timezra.eclipse.codemime.java.tests" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="timezra.eclipse.codemime.groovy.core" version="1.0.0" match="greaterOrEqual"/>
-      <import plugin="timezra.eclipse.codemime.groovy.ui" version="1.0.0" match="greaterOrEqual"/>
+      <import plugin="timezra.eclipse.codemime.tests" version="1.0.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.java.tests" version="1.0.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.groovy.core" version="1.0.0" match="compatible"/>
+      <import plugin="timezra.eclipse.codemime.groovy.ui" version="1.0.0" match="compatible"/>
    </requires>
 
    <plugin
