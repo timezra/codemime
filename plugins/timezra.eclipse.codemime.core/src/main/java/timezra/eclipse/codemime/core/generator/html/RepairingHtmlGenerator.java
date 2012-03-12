@@ -25,13 +25,12 @@ import org.eclipse.jface.text.TextUtilities;
 import org.eclipse.jface.text.presentation.IPresentationRepairer;
 import org.eclipse.swt.custom.StyleRange;
 
-
 /**
  * 
  * @author Utku Utkan
  * 
  */
-public class RepairingHtmlGenerator extends AbstractHtmlGenerator {
+public abstract class RepairingHtmlGenerator extends AbstractHtmlGenerator {
 
 	protected String partitioning;
 	protected Map<String, IPresentationRepairer> repairers;

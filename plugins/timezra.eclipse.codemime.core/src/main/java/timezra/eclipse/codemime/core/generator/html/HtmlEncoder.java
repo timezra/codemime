@@ -10,13 +10,14 @@
  *******************************************************************************/
 package timezra.eclipse.codemime.core.generator.html;
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * @author Utku Utkan
  */
-public class HtmlEncoder {
+class HtmlEncoder {
 
 	private static final String[][] BASIC_CHARACTERS = { { "quot", "34" }, { "amp", "38" }, { "lt", "60" },
 			{ "gt", "62" } };
@@ -74,22 +75,23 @@ public class HtmlEncoder {
 			{ "rdquo", "8221" }, { "bdquo", "8222" }, { "dagger", "8224" }, { "Dagger", "8225" }, { "permil", "8240" },
 			{ "lsaquo", "8249" }, { "rsaquo", "8250" }, { "euro", "8364" } };
 
-	private final Map<Integer, String> entityMap;
+	private static final Map<Integer, String> entityMap;
 
-	public HtmlEncoder() {
-		entityMap = new HashMap<Integer, String>();
-		addCharacters(BASIC_CHARACTERS);
-		addCharacters(ISO8859_1_CHARACTERS);
-		addCharacters(HTML40_CHARACTERS);
+	static {
+		final Map<Integer, String> theMap = new HashMap<Integer, String>();
+		addCharacters(BASIC_CHARACTERS, theMap);
+		addCharacters(ISO8859_1_CHARACTERS, theMap);
+		addCharacters(HTML40_CHARACTERS, theMap);
+		entityMap = Collections.unmodifiableMap(theMap);
 	}
 
-	private void addCharacters(final String[][] characters) {
+	private static void addCharacters(final String[][] characters, final Map<Integer, String> theMap) {
 		for (int i = 0; i < characters.length; i++) {
-			entityMap.put(Integer.valueOf(characters[i][1]), characters[i][0]);
+			theMap.put(Integer.valueOf(characters[i][1]), characters[i][0]);
 		}
 	}
 
-	public String encode(final String html) {
+	static String encode(final String html) {
 		final StringBuilder encodedHtml = new StringBuilder();
 
 		for (int i = 0; i < html.length(); i++) {

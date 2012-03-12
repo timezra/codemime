@@ -58,7 +58,6 @@ public abstract class AbstractHtmlGenerator implements CodeMimeGenerator {
 
 	private String generateHTML(final IDocument document, final List<StyleRange> styleRanges)
 			throws BadLocationException {
-		final HtmlEncoder encoder = new HtmlEncoder();
 		final StringBuilder html = new StringBuilder();
 
 		html.append("<span style=\"");
@@ -72,7 +71,7 @@ public abstract class AbstractHtmlGenerator implements CodeMimeGenerator {
 
 			String text = document.get(styleRange.start, styleRange.length);
 
-			text = encoder.encode(text);
+			text = HtmlEncoder.encode(text);
 
 			if (!whitespaceAllowed) {
 				text = replaceWhiteSpaceCharacters(text);
@@ -98,8 +97,29 @@ public abstract class AbstractHtmlGenerator implements CodeMimeGenerator {
 				break;
 			}
 
-			if (styleRange.foreground != null) {
+			if (styleRange.underline) {
 				if (styleRange.fontStyle != 0) {
+					builder.append(" ");
+				}
+				builder.append("text-decoration:underline");
+				if (!styleRange.strikeout) {
+					builder.append(";");
+				}
+			}
+
+			if (styleRange.strikeout) {
+				if (styleRange.underline) {
+					builder.append(" line-through;");
+				} else {
+					if (styleRange.fontStyle != 0) {
+						builder.append(" ");
+					}
+					builder.append("text-decoration:line-through;");
+				}
+			}
+
+			if (styleRange.foreground != null) {
+				if (styleRange.fontStyle != 0 || styleRange.underline || styleRange.strikeout) {
 					builder.append(" ");
 				}
 
