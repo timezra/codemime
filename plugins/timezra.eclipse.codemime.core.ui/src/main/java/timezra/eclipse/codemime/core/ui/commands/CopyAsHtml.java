@@ -23,7 +23,7 @@ import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.IRegion;
 import org.eclipse.ui.texteditor.AbstractDecoratedTextEditorPreferenceConstants;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 import timezra.eclipse.codemime.core.ui.Activator;
 import timezra.eclipse.codemime.core.ui.preferences.PreferenceConstants;
 
@@ -44,7 +44,7 @@ abstract class CopyAsHtml extends AbstractHandler {
 		@SuppressWarnings("restriction")
 		final IPreferenceStore workbenchPs = org.eclipse.ui.internal.WorkbenchPlugin.getDefault().getPreferenceStore();
 
-		final HtmlGenerator generator = createGenerator(event);
+		final CodeMimeGenerator generator = createGenerator(event);
 		generator.setWhitespaceAllowed(ps.getBoolean(PreferenceConstants.ALLOW_WHITESPACES));
 		generator.setTabWidth(editorsPs.getInt(AbstractDecoratedTextEditorPreferenceConstants.EDITOR_TAB_WIDTH));
 		generator.setFont(PreferenceConverter.getFontData(workbenchPs, getFontPreferenceName()));
@@ -63,5 +63,5 @@ abstract class CopyAsHtml extends AbstractHandler {
 
 	protected abstract String getFontPreferenceName();
 
-	protected abstract HtmlGenerator createGenerator(final ExecutionEvent event);
+	protected abstract CodeMimeGenerator createGenerator(final ExecutionEvent event);
 }

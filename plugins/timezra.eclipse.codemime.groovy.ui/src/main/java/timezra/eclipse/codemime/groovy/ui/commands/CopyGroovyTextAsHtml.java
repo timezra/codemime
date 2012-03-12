@@ -5,9 +5,9 @@ import org.eclipse.core.resources.IProject;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.part.FileEditorInput;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 import timezra.eclipse.codemime.core.ui.commands.CopyTextAsHtml;
-import timezra.eclipse.codemime.groovy.core.generator.GroovyHtmlGenerator;
+import timezra.eclipse.codemime.groovy.core.generator.html.GroovyHtmlGenerator;
 
 public class CopyGroovyTextAsHtml extends CopyTextAsHtml {
 
@@ -21,7 +21,7 @@ public class CopyGroovyTextAsHtml extends CopyTextAsHtml {
 	}
 
 	@Override
-	protected HtmlGenerator createGenerator(final ExecutionEvent event) {
+	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
 		return new GroovyHtmlGenerator(getProject(getEditorInput(event)));
 	}
 }

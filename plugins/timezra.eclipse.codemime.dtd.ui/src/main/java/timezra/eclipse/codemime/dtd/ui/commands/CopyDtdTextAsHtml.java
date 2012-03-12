@@ -12,9 +12,9 @@ package timezra.eclipse.codemime.dtd.ui.commands;
 
 import org.eclipse.core.commands.ExecutionEvent;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 import timezra.eclipse.codemime.core.ui.commands.CopyTextAsHtml;
-import timezra.eclipse.codemime.dtd.core.generator.DtdHtmlGenerator;
+import timezra.eclipse.codemime.dtd.core.generator.html.DtdHtmlGenerator;
 
 /**
  * @author Utku Utkan
@@ -27,7 +27,7 @@ public class CopyDtdTextAsHtml extends CopyTextAsHtml {
 	}
 
 	@Override
-	protected HtmlGenerator createGenerator(final ExecutionEvent event) {
+	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
 		return new DtdHtmlGenerator();
 	}
 }

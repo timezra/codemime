@@ -27,7 +27,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 
 public abstract class HtmlGeneratorTest {
 
@@ -52,7 +52,7 @@ public abstract class HtmlGeneratorTest {
 		final IEditorPart theEditor = IDE.openEditor(PlatformUI.getWorkbench().getActiveWorkbenchWindow()
 				.getActivePage(), getTheFile());
 
-		final HtmlGenerator theGenerator = createTheGenerator();
+		final CodeMimeGenerator theGenerator = createTheGenerator();
 		theGenerator.setFont(new FontData(FONT_NAME, FONT_HEIGHT, SWT.NORMAL));
 		final IDocumentProvider theDocumentProvider = getTheDocumentProvider(theEditor);
 		final String theActualHtml = theGenerator.generate(theDocumentProvider.getDocument(theEditor.getEditorInput()),
@@ -87,7 +87,7 @@ public abstract class HtmlGeneratorTest {
 
 	protected abstract IFile getTheFile();
 
-	protected abstract HtmlGenerator createTheGenerator();
+	protected abstract CodeMimeGenerator createTheGenerator();
 
 	protected abstract String getTheExpectedHtml();
 

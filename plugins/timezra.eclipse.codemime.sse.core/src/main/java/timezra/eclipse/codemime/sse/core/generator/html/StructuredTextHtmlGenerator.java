@@ -8,7 +8,7 @@
  * Contributors:
  *    Utku Utkan (Hoydaa Inc.) - initial API and implementation
  *******************************************************************************/
-package timezra.eclipse.codemime.sse.core.generator;
+package timezra.eclipse.codemime.sse.core.generator.html;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +21,7 @@ import org.eclipse.wst.sse.ui.StructuredTextViewerConfiguration;
 import org.eclipse.wst.sse.ui.internal.provisional.style.Highlighter;
 import org.eclipse.wst.sse.ui.internal.provisional.style.LineStyleProvider;
 
-import timezra.eclipse.codemime.core.generator.AbstractHtmlGenerator;
+import timezra.eclipse.codemime.core.generator.html.AbstractHtmlGenerator;
 
 /**
  * @author Utku Utkan

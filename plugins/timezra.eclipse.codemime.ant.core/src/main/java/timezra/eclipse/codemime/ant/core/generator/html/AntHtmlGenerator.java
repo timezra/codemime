@@ -8,7 +8,7 @@
  * Contributors:
  *    Utku Utkan (Hoydaa Inc.) - initial API and implementation
  *******************************************************************************/
-package timezra.eclipse.codemime.ant.core.generator;
+package timezra.eclipse.codemime.ant.core.generator.html;
 
 import org.eclipse.ant.internal.ui.AntUIPlugin;
 import org.eclipse.ant.internal.ui.editor.text.AntDocumentSetupParticipant;
@@ -23,7 +23,7 @@ import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.TextAttribute;
 import org.eclipse.swt.SWT;
 
-import timezra.eclipse.codemime.core.generator.RepairingHtmlGenerator;
+import timezra.eclipse.codemime.core.generator.html.RepairingHtmlGenerator;
 
 /**
  * 

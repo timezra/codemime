@@ -8,7 +8,7 @@
  * Contributors:
  *    Utku Utkan (Hoydaa Inc.) - initial API and implementation
  *******************************************************************************/
-package timezra.eclipse.codemime.core.generator;
+package timezra.eclipse.codemime.core.generator.html;
 
 import java.util.List;
 
@@ -19,12 +19,12 @@ import org.eclipse.swt.SWT;
 import org.eclipse.swt.custom.StyleRange;
 import org.eclipse.swt.graphics.FontData;
 
-import timezra.eclipse.codemime.core.generator.html.HtmlEncoder;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 
 /**
  * @author Utku Utkan
  */
-public abstract class AbstractHtmlGenerator implements HtmlGenerator {
+public abstract class AbstractHtmlGenerator implements CodeMimeGenerator {
 
 	private static final String EOL = System.getProperty("line.separator");
 

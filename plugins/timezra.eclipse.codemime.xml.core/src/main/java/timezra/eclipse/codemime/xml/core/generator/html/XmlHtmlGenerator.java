@@ -8,21 +8,21 @@
  * Contributors:
  *    Utku Utkan (Hoydaa Inc.) - initial API and implementation
  *******************************************************************************/
-package timezra.eclipse.codemime.html.core.generator;
+package timezra.eclipse.codemime.xml.core.generator.html;
 
-import org.eclipse.wst.html.ui.StructuredTextViewerConfigurationHTML;
+import org.eclipse.wst.xml.ui.StructuredTextViewerConfigurationXML;
 
-import timezra.eclipse.codemime.sse.core.generator.StructuredTextHtmlGenerator;
+import timezra.eclipse.codemime.sse.core.generator.html.StructuredTextHtmlGenerator;
 
 /**
  * 
  * @author Utku Utkan
  * 
  */
-public class HtmlHtmlGenerator extends StructuredTextHtmlGenerator {
+public class XmlHtmlGenerator extends StructuredTextHtmlGenerator {
 
-	public HtmlHtmlGenerator() {
-		super(new StructuredTextViewerConfigurationHTML());
+	public XmlHtmlGenerator() {
+		super(new StructuredTextViewerConfigurationXML());
 	}
 
 }

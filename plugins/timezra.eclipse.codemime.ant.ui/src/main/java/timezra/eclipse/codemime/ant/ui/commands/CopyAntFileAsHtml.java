@@ -12,8 +12,8 @@ package timezra.eclipse.codemime.ant.ui.commands;
 
 import org.eclipse.core.commands.ExecutionEvent;
 
-import timezra.eclipse.codemime.ant.core.generator.AntHtmlGenerator;
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.ant.core.generator.html.AntHtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 import timezra.eclipse.codemime.core.ui.commands.CopySimpleResourceAsHtml;
 
 /**
@@ -27,7 +27,7 @@ public class CopyAntFileAsHtml extends CopySimpleResourceAsHtml {
 	}
 
 	@Override
-	protected HtmlGenerator createGenerator(final ExecutionEvent event) {
+	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
 		return new AntHtmlGenerator();
 	}
 }

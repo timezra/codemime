@@ -12,9 +12,9 @@ package timezra.eclipse.codemime.xml.ui.commands;
 
 import org.eclipse.core.commands.ExecutionEvent;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 import timezra.eclipse.codemime.core.ui.commands.CopyTextAsHtml;
-import timezra.eclipse.codemime.xml.core.generator.XmlHtmlGenerator;
+import timezra.eclipse.codemime.xml.core.generator.html.XmlHtmlGenerator;
 
 /**
  * @author Utku Utkan
@@ -27,7 +27,7 @@ public class CopyXmlTextAsHtml extends CopyTextAsHtml {
 	}
 
 	@Override
-	protected HtmlGenerator createGenerator(final ExecutionEvent event) {
+	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
 		return new XmlHtmlGenerator();
 	}
 }

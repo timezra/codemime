@@ -8,7 +8,7 @@
  * Contributors:
  *    Utku Utkan (Hoydaa Inc.) - initial API and implementation
  *******************************************************************************/
-package timezra.eclipse.codemime.core.generator;
+package timezra.eclipse.codemime.core.generator.html;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -24,6 +24,7 @@ import org.eclipse.jface.text.TextPresentation;
 import org.eclipse.jface.text.TextUtilities;
 import org.eclipse.jface.text.presentation.IPresentationRepairer;
 import org.eclipse.swt.custom.StyleRange;
+
 
 /**
  * 

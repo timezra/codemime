@@ -12,9 +12,9 @@ package timezra.eclipse.codemime.properties.ui.commands;
 
 import org.eclipse.core.commands.ExecutionEvent;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 import timezra.eclipse.codemime.core.ui.commands.CopySimpleResourceAsHtml;
-import timezra.eclipse.codemime.properties.core.generator.PropertiesHtmlGenerator;
+import timezra.eclipse.codemime.properties.core.generator.html.PropertiesHtmlGenerator;
 
 /**
  * @author Utku Utkan
@@ -27,7 +27,7 @@ public class CopyPropertiesFileAsHtml extends CopySimpleResourceAsHtml {
 	}
 
 	@Override
-	protected HtmlGenerator createGenerator(final ExecutionEvent event) {
+	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
 		return new PropertiesHtmlGenerator();
 	}
 }

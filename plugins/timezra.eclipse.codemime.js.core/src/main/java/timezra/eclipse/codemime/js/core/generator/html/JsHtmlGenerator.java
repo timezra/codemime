@@ -1,4 +1,4 @@
-package timezra.eclipse.codemime.js.core.generator;
+package timezra.eclipse.codemime.js.core.generator.html;
 
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.jface.text.IDocument;
@@ -13,7 +13,7 @@ import org.eclipse.wst.jsdt.ui.text.IJavaScriptColorConstants;
 import org.eclipse.wst.jsdt.ui.text.IJavaScriptPartitions;
 import org.eclipse.wst.jsdt.ui.text.JavaScriptTextTools;
 
-import timezra.eclipse.codemime.core.generator.RepairingHtmlGenerator;
+import timezra.eclipse.codemime.core.generator.html.RepairingHtmlGenerator;
 
 @SuppressWarnings("restriction")
 public class JsHtmlGenerator extends RepairingHtmlGenerator {

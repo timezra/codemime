@@ -1,6 +1,7 @@
-package timezra.eclipse.codemime.properties.core.generator;
+package timezra.eclipse.codemime.properties.core.generator.html;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
+import timezra.eclipse.codemime.properties.core.generator.html.PropertiesHtmlGenerator;
 import timezra.eclipse.codemime.tests.generator.SimpleFileHtmlGeneratorTest;
 
 public class PropertiesHtmlGeneratorTest extends SimpleFileHtmlGeneratorTest {
@@ -24,7 +25,7 @@ public class PropertiesHtmlGeneratorTest extends SimpleFileHtmlGeneratorTest {
 	}
 
 	@Override
-	protected HtmlGenerator createTheGenerator() {
+	protected CodeMimeGenerator createTheGenerator() {
 		return new PropertiesHtmlGenerator();
 	}
 

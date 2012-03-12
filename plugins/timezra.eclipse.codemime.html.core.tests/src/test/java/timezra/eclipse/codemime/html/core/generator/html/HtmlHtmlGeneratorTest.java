@@ -1,6 +1,7 @@
-package timezra.eclipse.codemime.html.core.generator;
+package timezra.eclipse.codemime.html.core.generator.html;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
+import timezra.eclipse.codemime.html.core.generator.html.HtmlHtmlGenerator;
 import timezra.eclipse.codemime.tests.generator.SimpleFileHtmlGeneratorTest;
 
 public class HtmlHtmlGeneratorTest extends SimpleFileHtmlGeneratorTest {
@@ -54,7 +55,7 @@ public class HtmlHtmlGeneratorTest extends SimpleFileHtmlGeneratorTest {
 	}
 
 	@Override
-	protected HtmlGenerator createTheGenerator() {
+	protected CodeMimeGenerator createTheGenerator() {
 		return new HtmlHtmlGenerator();
 	}
 

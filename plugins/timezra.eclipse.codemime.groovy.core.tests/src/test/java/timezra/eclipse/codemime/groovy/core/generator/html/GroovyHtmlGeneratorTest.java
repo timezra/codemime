@@ -1,10 +1,11 @@
-package timezra.eclipse.codemime.groovy.core.generator;
+package timezra.eclipse.codemime.groovy.core.generator.html;
 
 import org.codehaus.groovy.eclipse.core.model.GroovyRuntime;
 import org.eclipse.core.resources.IncrementalProjectBuilder;
 import org.eclipse.core.runtime.CoreException;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
+import timezra.eclipse.codemime.groovy.core.generator.html.GroovyHtmlGenerator;
 import timezra.eclipse.codemime.java.tests.generator.JavaFileHtmlGeneratorTest;
 
 public class GroovyHtmlGeneratorTest extends JavaFileHtmlGeneratorTest {
@@ -40,7 +41,7 @@ public class GroovyHtmlGeneratorTest extends JavaFileHtmlGeneratorTest {
 	}
 
 	@Override
-	protected HtmlGenerator createTheGenerator() {
+	protected CodeMimeGenerator createTheGenerator() {
 		return new GroovyHtmlGenerator(getTheProject());
 	}
 

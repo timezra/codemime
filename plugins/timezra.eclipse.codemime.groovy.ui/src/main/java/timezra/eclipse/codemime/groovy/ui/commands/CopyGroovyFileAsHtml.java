@@ -4,9 +4,9 @@ import org.eclipse.core.commands.ExecutionEvent;
 import org.eclipse.core.runtime.IPath;
 import org.eclipse.jdt.core.ICompilationUnit;
 
-import timezra.eclipse.codemime.core.generator.HtmlGenerator;
+import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
 import timezra.eclipse.codemime.core.ui.commands.CopyResourceAsHtml;
-import timezra.eclipse.codemime.groovy.core.generator.GroovyHtmlGenerator;
+import timezra.eclipse.codemime.groovy.core.generator.html.GroovyHtmlGenerator;
 
 public class CopyGroovyFileAsHtml extends CopyResourceAsHtml<ICompilationUnit> {
 
@@ -21,7 +21,7 @@ public class CopyGroovyFileAsHtml extends CopyResourceAsHtml<ICompilationUnit> {
 	}
 
 	@Override
-	protected HtmlGenerator createGenerator(final ExecutionEvent event) {
+	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
 		final ICompilationUnit theSelection = getSelection(event);
 		return new GroovyHtmlGenerator(theSelection.getJavaProject() == null ? null : theSelection.getJavaProject()
 				.getProject());

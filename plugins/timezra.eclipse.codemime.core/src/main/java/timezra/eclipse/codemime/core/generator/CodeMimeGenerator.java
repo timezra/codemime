@@ -8,21 +8,25 @@
  * Contributors:
  *    Utku Utkan (Hoydaa Inc.) - initial API and implementation
  *******************************************************************************/
-package timezra.eclipse.codemime.dtd.core.generator;
+package timezra.eclipse.codemime.core.generator;
 
-import org.eclipse.wst.dtd.ui.StructuredTextViewerConfigurationDTD;
-
-import timezra.eclipse.codemime.sse.core.generator.StructuredTextHtmlGenerator;
+import org.eclipse.jface.text.IDocument;
+import org.eclipse.jface.text.IRegion;
+import org.eclipse.swt.graphics.FontData;
 
 /**
  * 
  * @author Utku Utkan
  * 
  */
-public class DtdHtmlGenerator extends StructuredTextHtmlGenerator {
+public interface CodeMimeGenerator {
 
-	public DtdHtmlGenerator() {
-		super(new StructuredTextViewerConfigurationDTD());
-	}
+	String generate(final IDocument document, final IRegion region);
+
+	void setFont(final FontData font);
+
+	void setWhitespaceAllowed(final boolean b);
+
+	void setTabWidth(final int width);
 
 }

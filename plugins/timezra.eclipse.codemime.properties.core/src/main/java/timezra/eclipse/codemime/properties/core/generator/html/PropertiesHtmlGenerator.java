@@ -8,7 +8,7 @@
  * Contributors:
  *    Utku Utkan (Hoydaa Inc.) - initial API and implementation
  *******************************************************************************/
-package timezra.eclipse.codemime.properties.core.generator;
+package timezra.eclipse.codemime.properties.core.generator.html;
 
 import org.eclipse.jdt.internal.ui.JavaPlugin;
 import org.eclipse.jdt.internal.ui.propertiesfileeditor.IPropertiesFilePartitions;
@@ -22,7 +22,7 @@ import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.rules.DefaultDamagerRepairer;
 import org.eclipse.jface.text.rules.ITokenScanner;
 
-import timezra.eclipse.codemime.core.generator.RepairingHtmlGenerator;
+import timezra.eclipse.codemime.core.generator.html.RepairingHtmlGenerator;
 
 /**
  * 
