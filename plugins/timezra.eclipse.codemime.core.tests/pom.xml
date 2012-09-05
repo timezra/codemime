@@ -6,13 +6,13 @@
 	<packaging>eclipse-test-plugin</packaging>
 	<name>timezra.eclipse.codemime.core.tests</name>
 	<description>Test project for the timezra.eclipse.codemime.core plug-in</description>
-	
+
 	<parent>
 		<groupId>timezra.eclipse</groupId>
 		<artifactId>timezra.eclipse.codemime.plugins</artifactId>
 		<version>1.0.2-SNAPSHOT</version>
 	</parent>
-	
+
 	<build>
 		<outputDirectory>target/test-classes</outputDirectory>
 		<plugins>
@@ -26,15 +26,14 @@
 			</plugin>
 		</plugins>
 	</build>
-	
+
 	<profiles>
 		<profile>
 			<id>osx</id>
 			<activation>
-				<property>
-					<name>java.vendor.url</name>
-					<value>http://www.apple.com/</value>
-				</property>
+				<os>
+					<family>mac</family>
+				</os>
 			</activation>
 			<build>
 				<pluginManagement>
