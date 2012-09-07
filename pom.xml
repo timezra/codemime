@@ -42,6 +42,29 @@
 				</pluginManagement>
 			</build>
 		</profile>
+		<profile>
+			<id>juno</id>
+			<activation>
+				<property>
+					<name>!indigo-active</name>
+				</property>
+			</activation>
+			<properties>
+				<eclipse-p2-repository-url>http://download.eclipse.org/releases/juno/</eclipse-p2-repository-url>
+				<greclipse-p2-repository-url>http://dist.springsource.org/release/GRECLIPSE/e4.2/</greclipse-p2-repository-url>
+			</properties>
+		</profile>
+		<profile>
+			<id>indigo</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<properties>
+				<indigo-active>true</indigo-active>
+				<eclipse-p2-repository-url>http://download.eclipse.org/releases/indigo/</eclipse-p2-repository-url>
+				<greclipse-p2-repository-url>http://dist.springsource.org/release/GRECLIPSE/e3.7/</greclipse-p2-repository-url>
+			</properties>
+		</profile>
 	</profiles>
 
 	<build>
@@ -92,17 +115,17 @@
 
 	<repositories>
 		<repository>
-			<id>indigo</id>
+			<id>eclipse-p2-repository</id>
 			<layout>p2</layout>
-			<url>http://download.eclipse.org/releases/indigo/</url>
+			<url>${eclipse-p2-repository-url}</url>
 		</repository>
 		<repository>
-			<id>greclipse</id>
+			<id>greclipse-p2-repository</id>
 			<layout>p2</layout>
-			<url>http://dist.springsource.org/release/GRECLIPSE/e3.7/</url>
+			<url>${greclipse-p2-repository-url}</url>
 		</repository>
 	</repositories>
-	
+
 	<modules>
 		<module>plugins</module>
 		<module>features</module>
