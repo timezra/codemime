@@ -28,10 +28,10 @@ As an example, the following code can be copied from the Eclipse Java Editor:
 
 ``` java
 public interface HtmlGenerator {
-&nbsp;&nbsp;String generate(final IDocument document, final IRegion region);
-&nbsp;&nbsp;void setFont(final FontData font);
-&nbsp;&nbsp;void setWhitespaceAllowed(final boolean b);
-&nbsp;&nbsp;void setTabWidth(final int width);
+    String generate(final IDocument document, final IRegion region);
+    void setFont(final FontData font);
+    void setWhitespaceAllowed(final boolean b);
+    void setTabWidth(final int width);
 }
 ```
 
