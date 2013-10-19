@@ -6,5 +6,5 @@ Bundle-Version: 1.0.2.qualifier
 Bundle-Vendor: %providerName
 Fragment-Host: timezra.eclipse.codemime.html.ui;bundle-version="[1.0.0,2.0.0)"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Require-Bundle: org.junit4;bundle-version="[4.5.0,5.0.0)"
+Require-Bundle: org.junit;bundle-version="[4.5.0,5.0.0)"
 Bundle-Localization: plugin

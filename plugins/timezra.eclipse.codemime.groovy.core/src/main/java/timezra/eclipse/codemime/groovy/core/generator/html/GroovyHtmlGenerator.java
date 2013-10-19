@@ -15,8 +15,11 @@ import org.codehaus.groovy.eclipse.core.preferences.PreferenceConstants;
 import org.codehaus.groovy.eclipse.editor.GroovyTagScanner;
 import org.codehaus.groovy.eclipse.editor.highlighting.HighlightingExtenderRegistry;
 import org.eclipse.core.resources.IProject;
+import org.eclipse.core.runtime.CoreException;
+import org.eclipse.jdt.internal.ui.JavaPlugin;
 import org.eclipse.jdt.internal.ui.text.JavaCommentScanner;
 import org.eclipse.jdt.internal.ui.text.SingleTokenJavaScanner;
+import org.eclipse.jdt.internal.ui.text.java.JavaCodeScanner;
 import org.eclipse.jdt.internal.ui.text.javadoc.JavaDocScanner;
 import org.eclipse.jdt.ui.text.IColorManager;
 import org.eclipse.jdt.ui.text.IJavaColorConstants;
@@ -24,8 +27,10 @@ import org.eclipse.jdt.ui.text.IJavaPartitions;
 import org.eclipse.jface.preference.IPreferenceStore;
 import org.eclipse.jface.text.IDocument;
 import org.eclipse.jface.text.rules.DefaultDamagerRepairer;
+import org.eclipse.jface.text.rules.ITokenScanner;
 
 import timezra.eclipse.codemime.core.generator.html.RepairingHtmlGenerator;
+import timezra.eclipse.codemime.groovy.core.Activator;
 
 /**
  * 
@@ -60,10 +65,16 @@ public class GroovyHtmlGenerator extends RepairingHtmlGenerator {
 		addRepairer(IJavaPartitions.JAVA_CHARACTER, new DefaultDamagerRepairer(stringScanner));
 	}
 
-	private GroovyTagScanner createTagScanner(final IProject project, final IColorManager colorManager,
+	private ITokenScanner createTagScanner(final IProject project, final IColorManager colorManager,
 			final HighlightingExtenderRegistry registry) {
-		return new GroovyTagScanner(colorManager, registry.getAdditionalRulesForProject(project),
-				registry.getExtraGroovyKeywordsForProject(project), registry.getExtraGJDKKeywordsForProject(project));
+		try {
+			return new GroovyTagScanner(colorManager, registry.getAdditionalRulesForProject(project),
+					registry.getExtraGroovyKeywordsForProject(project),
+					registry.getExtraGJDKKeywordsForProject(project));
+		} catch (final CoreException e) {
+			Activator.getDefault().getLog().log(e.getStatus());
+			return new JavaCodeScanner(colorManager, JavaPlugin.getDefault().getPreferenceStore());
+		}
 	}
 
 	private HighlightingExtenderRegistry getHighlightingExtenderRegistry() {

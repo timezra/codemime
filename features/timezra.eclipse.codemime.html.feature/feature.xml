@@ -32,11 +32,12 @@
       <import plugin="org.eclipse.jface.text" version="3.5.0" match="compatible"/>
       <import plugin="org.eclipse.wst.sse.ui" version="1.3.0" match="compatible"/>
       <import plugin="org.eclipse.wst.html.ui" version="1.0.0" match="compatible"/>
-      <import plugin="org.eclipse.core.resources" version="3.5.0" match="compatible"/>
       <import plugin="timezra.eclipse.codemime.core" version="1.0.0" match="compatible"/>
       <import plugin="timezra.eclipse.codemime.sse.core" version="1.0.0" match="compatible"/>
+      <import plugin="org.eclipse.core.resources" version="3.5.0" match="compatible"/>
       <import plugin="timezra.eclipse.codemime.core.ui" version="1.0.0" match="compatible"/>
       <import plugin="timezra.eclipse.codemime.html.core" version="1.0.0" match="compatible"/>
+      <import plugin="com.ibm.icu" version="50.0.0" match="compatible"/>
    </requires>
 
    <plugin

@@ -10,7 +10,7 @@
 	<description>Parent project for the timezra.eclipse.codemime project set</description>
 
 	<properties>
-		<tycho-version>0.13.0</tycho-version>
+		<tycho-version>0.18.1</tycho-version>
 	</properties>
 
 	<profiles>
@@ -43,26 +43,26 @@
 			</build>
 		</profile>
 		<profile>
-			<id>juno</id>
+			<id>kepler</id>
 			<activation>
 				<property>
-					<name>!indigo-active</name>
+					<name>!juno-active</name>
 				</property>
 			</activation>
 			<properties>
-				<eclipse-p2-repository-url>http://download.eclipse.org/releases/juno/</eclipse-p2-repository-url>
-				<greclipse-p2-repository-url>http://dist.springsource.org/release/GRECLIPSE/e4.2/</greclipse-p2-repository-url>
+				<eclipse-p2-repository-url>http://download.eclipse.org/releases/kepler/</eclipse-p2-repository-url>
+				<greclipse-p2-repository-url>http://dist.springsource.org/release/GRECLIPSE/e4.3/</greclipse-p2-repository-url>
 			</properties>
 		</profile>
 		<profile>
-			<id>indigo</id>
+			<id>juno</id>
 			<activation>
 				<activeByDefault>false</activeByDefault>
 			</activation>
 			<properties>
-				<indigo-active>true</indigo-active>
-				<eclipse-p2-repository-url>http://download.eclipse.org/releases/indigo/</eclipse-p2-repository-url>
-				<greclipse-p2-repository-url>http://dist.springsource.org/release/GRECLIPSE/e3.7/</greclipse-p2-repository-url>
+				<juno-active>true</juno-active>
+				<eclipse-p2-repository-url>http://download.eclipse.org/releases/juno/</eclipse-p2-repository-url>
+				<greclipse-p2-repository-url>http://dist.springsource.org/release/GRECLIPSE/e4.2/</greclipse-p2-repository-url>
 			</properties>
 		</profile>
 	</profiles>

@@ -1,14 +1,20 @@
 package timezra.eclipse.codemime.groovy.core.generator.html;
 
 import org.codehaus.groovy.eclipse.core.model.GroovyRuntime;
+import org.codehaus.jdt.groovy.integration.LanguageSupportFactory;
 import org.eclipse.core.resources.IncrementalProjectBuilder;
 import org.eclipse.core.runtime.CoreException;
+import org.junit.BeforeClass;
 
 import timezra.eclipse.codemime.core.generator.CodeMimeGenerator;
-import timezra.eclipse.codemime.groovy.core.generator.html.GroovyHtmlGenerator;
 import timezra.eclipse.codemime.java.tests.generator.JavaFileHtmlGeneratorTest;
 
 public class GroovyHtmlGeneratorTest extends JavaFileHtmlGeneratorTest {
+
+	@BeforeClass
+	public static void setUpBeforeClass() {
+		LanguageSupportFactory.getEventHandler(); // ensures the plugin gets loaded before the editor is opened
+	}
 
 	// @formatter:off
 	private static final String GROOVY_FILE_CONTENTS = "" 

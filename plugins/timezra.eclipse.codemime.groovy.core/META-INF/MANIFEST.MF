@@ -11,9 +11,11 @@ Require-Bundle: org.eclipse.ui;bundle-version="[3.5.0,4.0.0)",
  org.eclipse.core.resources;bundle-version="[3.5.0,4.0.0)",
  org.eclipse.jface.text;bundle-version="[3.5.0,4.0.0)",
  timezra.eclipse.codemime.core;bundle-version="[1.0.0,2.0.0)",
- org.eclipse.jdt.ui;bundle-version="[3.5.0,4.0.0)",
- org.codehaus.groovy.eclipse.core;bundle-version="[2.5.0,3.0.0)",
- org.codehaus.groovy.eclipse.ui;bundle-version="[2.5.0,3.0.0)"
+ org.eclipse.jdt.core;bundle-version="[3.9.0.xx-20130703-1600-e43-RELEASE,3.9.0.xx-20130703-1600-e43-RELEASE]",
+ org.eclipse.jdt.ui;bundle-version="[3.9.0,4.0.0)",
+ org.eclipse.jdt.groovy.core;bundle-version="[2.8.0,3.0.0)",
+ org.codehaus.groovy.eclipse.core;bundle-version="[2.8.0,3.0.0)",
+ org.codehaus.groovy.eclipse.ui;bundle-version="[2.8.0,3.0.0)"
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Export-Package: timezra.eclipse.codemime.groovy.core.generator.html
