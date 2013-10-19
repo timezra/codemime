@@ -26,18 +26,18 @@ Copying from the following types is supported:
 
 As an example, the following code can be copied from the Eclipse Java Editor:
 
-<code lang="java">
+``` java
 public interface HtmlGenerator {
 &nbsp;&nbsp;String generate(final IDocument document, final IRegion region);
 &nbsp;&nbsp;void setFont(final FontData font);
 &nbsp;&nbsp;void setWhitespaceAllowed(final boolean b);
 &nbsp;&nbsp;void setTabWidth(final int width);
 }
-</code>
+```
 
 CodeMime will generate this HTML and make it available to the system clipboard:
 
-<code lang="html">
+``` html
 <span style="font-family: monaco; font-size: 11pt;"><span style="font-weight: bold; color: rgb(127,0,85);">public</span><span style="color: rgb(0,0,0);">&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">interface</span><span style="color: rgb(0,0,0);">&nbsp;HtmlGenerator&nbsp;{
 <br />
 &nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;generate(</span><span style="font-weight: bold; color: rgb(127,0,85);">final</span><span style="color: rgb(0,0,0);">&nbsp;IDocument&nbsp;document,&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">final</span><span style="color: rgb(0,0,0);">&nbsp;IRegion&nbsp;region);
@@ -49,7 +49,7 @@ CodeMime will generate this HTML and make it available to the system clipboard:
 &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">void</span><span style="color: rgb(0,0,0);">&nbsp;setTabWidth(</span><span style="font-weight: bold; color: rgb(127,0,85);">final</span><span style="color: rgb(0,0,0);">&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">int</span><span style="color: rgb(0,0,0);">&nbsp;width);
 <br />
 }</span></span>
-</code>
+```
 
 CodeMime is based on this maven archetype: http://github.com/timezra/tycho_new_plugin_project
 
