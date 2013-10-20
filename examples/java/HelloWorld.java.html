@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HelloWorld.java</title>
+</head>
+<body>
+  <div style="overflow: auto; padding: 1em; background-color: white; border-style: dashed; border-width: thin;">
+    <div style="font-family: monospace; font-size: 10pt;">
+      <span style="font-weight: bold; color: rgb(127,0,85);">package</span><span style="color: rgb(0,0,0);">&nbsp;timezra.codemime;<br />
+      <br />
+      </span><span style="font-weight: bold; color: rgb(127,0,85);">public</span><span style="color: rgb(0,0,0);">&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">abstract</span><span style="color: rgb(0,0,0);">&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">class</span><span style="color: rgb(0,0,0);">&nbsp;HelloWorld&nbsp;{<br />
+      &nbsp;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;String&nbsp;name;<br />
+      <br />
+      &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">public</span><span style="color: rgb(0,0,0);">&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">static</span><span style="color: rgb(0,0,0);">&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">void</span><span style="color: rgb(0,0,0);">&nbsp;main(</span><span style="font-weight: bold; color: rgb(127,0,85);">final</span><span style="color: rgb(0,0,0);">&nbsp;String[]&nbsp;args)&nbsp;{<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">final</span><span style="color: rgb(0,0,0);">&nbsp;HelloWorld&nbsp;helloWorld&nbsp;=&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">new</span><span style="color: rgb(0,0,0);">&nbsp;HelloWorld()&nbsp;{<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;@Override&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">void</span><span style="color: rgb(0,0,0);">&nbsp;sayHello()&nbsp;{&nbsp;System.out.println(</span><span style="color: rgb(42,0,255);">&quot;Hello,&nbsp;&quot;</span><span style="color: rgb(0,0,0);">&nbsp;+&nbsp;name);&nbsp;}<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;};<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;helloWorld.name&nbsp;=&nbsp;System.getProperty(</span><span style="color: rgb(42,0,255);">&quot;user.name&quot;</span><span style="color: rgb(0,0,0);">);<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;helloWorld.sayHello();<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;}<br />
+      &nbsp;<br />
+      &nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">abstract</span><span style="color: rgb(0,0,0);">&nbsp;</span><span style="font-weight: bold; color: rgb(127,0,85);">void</span><span style="color: rgb(0,0,0);">&nbsp;sayHello();<br />
+      }<br />
+      </span>
+    </div>
+  </div>
+</body>
+</html>

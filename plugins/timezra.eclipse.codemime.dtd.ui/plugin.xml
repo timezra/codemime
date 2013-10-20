@@ -41,7 +41,7 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="false"
-            locationURI="popup:org.eclipse.wst.dtd.core.dtdsource.source.EditorContext?after=group.edit">
+            locationURI="popup:org.eclipse.wst.dtd.core.dtdsource.source.EditorContext?endof=group.edit">
          <menu
                icon="icons/full/etool16/copy_as_html_edit.gif"
                id="timezra.eclipse.codemime.dtd.ui.copyTextAs"
@@ -57,7 +57,7 @@
       </menuContribution>
       <menuContribution
             allPopups="false"
-            locationURI="popup:org.eclipse.ui.popup.any?after=group.edit">
+            locationURI="popup:org.eclipse.ui.popup.any?endof=group.edit">
          <menu
                icon="icons/full/etool16/copy_as_html_edit.gif"
                id="timezra.eclipse.codemime.dtd.ui.copyFileAs"
