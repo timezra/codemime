@@ -33,8 +33,8 @@ import timezra.eclipse.codemime.core.generator.html.RepairingHtmlGenerator;
 @SuppressWarnings("restriction")
 public class JavaHtmlGenerator extends RepairingHtmlGenerator {
 
-	public JavaHtmlGenerator() {
-		super(IJavaPartitions.JAVA_PARTITIONING);
+	public JavaHtmlGenerator(final String title) {
+		super(title, IJavaPartitions.JAVA_PARTITIONING);
 
 		final JavaTextTools tools = JavaPlugin.getDefault().getJavaTextTools();
 
@@ -66,5 +66,4 @@ public class JavaHtmlGenerator extends RepairingHtmlGenerator {
 		repairer = new DefaultDamagerRepairer(stringScanner);
 		addRepairer(IJavaPartitions.JAVA_CHARACTER, repairer);
 	}
-
 }

@@ -16,6 +16,11 @@ public class CopyGroovyFileAsHtml extends CopyResourceAsHtml<ICompilationUnit> {
 	}
 
 	@Override
+	protected String getName(final ExecutionEvent event) {
+		return getSelection(event).getElementName();
+	}
+
+	@Override
 	protected String getFontPreferenceName() {
 		return "org.eclipse.jdt.ui.editors.textfont";
 	}
@@ -23,7 +28,7 @@ public class CopyGroovyFileAsHtml extends CopyResourceAsHtml<ICompilationUnit> {
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
 		final ICompilationUnit theSelection = getSelection(event);
-		return new GroovyHtmlGenerator(theSelection.getJavaProject() == null ? null : theSelection.getJavaProject()
-				.getProject());
+		return new GroovyHtmlGenerator(getName(event), theSelection.getJavaProject() == null ? null : theSelection
+				.getJavaProject().getProject());
 	}
 }

@@ -21,8 +21,8 @@ import timezra.eclipse.codemime.sse.core.generator.html.StructuredTextHtmlGenera
  */
 public class XmlHtmlGenerator extends StructuredTextHtmlGenerator {
 
-	public XmlHtmlGenerator() {
-		super(new StructuredTextViewerConfigurationXML());
+	public XmlHtmlGenerator(final String title) {
+		super(title, new StructuredTextViewerConfigurationXML());
 	}
 
 }

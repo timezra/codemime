@@ -33,7 +33,7 @@ public abstract class JavaFileHtmlGeneratorTest extends HtmlGeneratorTest {
 		configureTheProject(theSourceFolderName);
 		final IFolder theSourceFolder = createASourceFolder(theSourceFolderName);
 		final IFolder thePackage = createAPackage(theSourceFolder, PACKAGE_NAME.replaceAll("\\.", "/"));
-		theJavaFile = createAFile(thePackage, CLASS_NAME + '.' + getTheType());
+		theJavaFile = createAFile(thePackage, getTheFileName());
 	}
 
 	protected abstract String getTheType();
@@ -80,5 +80,9 @@ public abstract class JavaFileHtmlGeneratorTest extends HtmlGeneratorTest {
 			create((IFolder) parent);
 		}
 		folder.create(true, true, NULL_PROGRESS_MONITOR);
+	}
+
+	protected final String getTheFileName() {
+		return CLASS_NAME + '.' + getTheType();
 	}
 }

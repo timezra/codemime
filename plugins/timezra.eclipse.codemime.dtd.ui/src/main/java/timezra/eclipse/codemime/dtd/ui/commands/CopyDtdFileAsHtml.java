@@ -28,6 +28,6 @@ public class CopyDtdFileAsHtml extends CopySimpleResourceAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new DtdHtmlGenerator();
+		return new DtdHtmlGenerator(getName(event));
 	}
 }

@@ -28,6 +28,6 @@ public class CopyXmlFileAsHtml extends CopySimpleResourceAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new XmlHtmlGenerator();
+		return new XmlHtmlGenerator(getName(event));
 	}
 }

@@ -29,12 +29,17 @@ public class CopyJavaFileAsHtml extends CopyResourceAsHtml<ICompilationUnit> {
 	}
 
 	@Override
+	protected String getName(final ExecutionEvent event) {
+		return getSelection(event).getElementName();
+	}
+
+	@Override
 	protected String getFontPreferenceName() {
 		return "org.eclipse.jdt.ui.editors.textfont";
 	}
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new JavaHtmlGenerator();
+		return new JavaHtmlGenerator(getName(event));
 	}
 }

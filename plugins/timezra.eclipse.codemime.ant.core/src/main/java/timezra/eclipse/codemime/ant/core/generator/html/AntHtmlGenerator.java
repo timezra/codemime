@@ -33,8 +33,8 @@ import timezra.eclipse.codemime.core.generator.html.RepairingHtmlGenerator;
 @SuppressWarnings("restriction")
 public class AntHtmlGenerator extends RepairingHtmlGenerator {
 
-	public AntHtmlGenerator() {
-		super(AntDocumentSetupParticipant.ANT_PARTITIONING);
+	public AntHtmlGenerator(final String title) {
+		super(title, AntDocumentSetupParticipant.ANT_PARTITIONING);
 
 		final AntEditorProcInstrScanner instructionScanner = new AntEditorProcInstrScanner();
 		MultilineDamagerRepairer repairer = new MultilineDamagerRepairer(instructionScanner);

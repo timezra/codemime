@@ -9,4 +9,9 @@ public abstract class CopySimpleResourceAsHtml extends CopyResourceAsHtml<IResou
 	protected final IPath getPath(final ExecutionEvent event) {
 		return getSelection(event).getFullPath();
 	}
+
+	@Override
+	protected final String getName(final ExecutionEvent event) {
+		return getSelection(event).getName();
+	}
 }

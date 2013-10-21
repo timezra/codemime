@@ -32,8 +32,8 @@ import timezra.eclipse.codemime.core.generator.html.RepairingHtmlGenerator;
 @SuppressWarnings("restriction")
 public class PropertiesHtmlGenerator extends RepairingHtmlGenerator {
 
-	public PropertiesHtmlGenerator() {
-		super(IPropertiesFilePartitions.PROPERTIES_FILE_PARTITIONING);
+	public PropertiesHtmlGenerator(final String title) {
+		super(title, IPropertiesFilePartitions.PROPERTIES_FILE_PARTITIONING);
 
 		final JavaTextTools tools = JavaPlugin.getDefault().getJavaTextTools();
 

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HelloWorld.groovy</title>
+<style type="text/css">
+div.cm_source {
+  overflow: auto;
+  padding: 1em;
+  background-color: white;
+  border-style: dashed;
+  border-width: thin;
+  font-family: monospace;
+  font-size: 10pt;
+}
+span.cm_b_n_n_972C78 {
+  font-weight: bold;
+  color: #972C78;
+}
+span.cm_n_n_n_0 {
+  color: #000000;
+}
+span.cm_n_n_n_CD3200 {
+  color: #CD3200;
+}
+span.cm_n_n_n_66CCFF {
+  color: #66CCFF;
+}
+span.cm_n_n_n_FF00CC {
+  color: #FF00CC;
+}
+</style>
+</head>
+<body>
+<div class="cm_source">
+<span class="cm_b_n_n_972C78">package</span>&nbsp;<span class="cm_n_n_n_0">timezra.codemime</span><br />
+  <br />
+  <span class="cm_b_n_n_972C78">class</span>&nbsp;<span class="cm_n_n_n_0">HelloWorld</span>&nbsp;<span class="cm_n_n_n_0">{</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_b_n_n_972C78">static</span>&nbsp;<span class="cm_b_n_n_972C78">void</span>&nbsp;<span class="cm_n_n_n_0">main(args)</span>&nbsp;<span class="cm_n_n_n_0">{</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_b_n_n_972C78">def</span>&nbsp;<span class="cm_n_n_n_0">name</span>&nbsp;<span class="cm_n_n_n_0">=</span>&nbsp;<span class="cm_n_n_n_0">args[</span><span class="cm_n_n_n_CD3200">0</span><span class="cm_n_n_n_0">].replaceAll(/\\w+/,</span>&nbsp;<span class="cm_n_n_n_0">{</span>&nbsp;<span class="cm_n_n_n_66CCFF">it</span><span class="cm_n_n_n_0">[</span><span class="cm_n_n_n_CD3200">0</span><span class="cm_n_n_n_0">].toUpperCase()</span>&nbsp;<span class="cm_n_n_n_0">+</span>&nbsp;<span class="cm_n_n_n_0">((</span><span class="cm_n_n_n_66CCFF">it</span><span class="cm_n_n_n_0">.</span><span class="cm_n_n_n_66CCFF">size</span><span class="cm_n_n_n_0">()</span>&nbsp;<span class="cm_n_n_n_0">&gt;</span>&nbsp;<span class="cm_n_n_n_CD3200">1</span><span class="cm_n_n_n_0">)</span>&nbsp;<span class="cm_n_n_n_0">?</span>&nbsp;<span class="cm_n_n_n_66CCFF">it</span><span class="cm_n_n_n_0">[</span><span class="cm_n_n_n_CD3200">1</span><span class="cm_n_n_n_0">..-</span><span class="cm_n_n_n_CD3200">1</span><span class="cm_n_n_n_0">]</span>&nbsp;<span class="cm_n_n_n_0">:</span>&nbsp;<span class="cm_n_n_n_FF00CC">''</span><span class="cm_n_n_n_0">)</span>&nbsp;<span class="cm_n_n_n_0">})</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_n_n_66CCFF">println</span>&nbsp;<span class="cm_n_n_n_FF00CC">&quot;Hello,&nbsp;${name}!&quot;</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_n_n_0">}</span><br />
+  <span class="cm_n_n_n_0">}</span><br />
+  
+</div>
+</body>
+</html>

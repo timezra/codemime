@@ -28,6 +28,6 @@ public class CopyPropertiesTextAsHtml extends CopyTextAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new PropertiesHtmlGenerator();
+		return new PropertiesHtmlGenerator(getTitle(event));
 	}
 }

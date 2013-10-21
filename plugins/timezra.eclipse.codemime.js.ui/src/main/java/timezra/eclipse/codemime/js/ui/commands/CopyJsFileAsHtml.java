@@ -15,6 +15,6 @@ public class CopyJsFileAsHtml extends CopySimpleResourceAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new JsHtmlGenerator();
+		return new JsHtmlGenerator(getName(event));
 	}
 }

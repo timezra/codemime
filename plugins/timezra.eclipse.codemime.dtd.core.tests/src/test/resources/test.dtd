@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE REPORT [ 
+ 
+<!ELEMENT BRANCH (%STEM;,BRANCH*)>
+<!ELEMENT LEAF	EMPTY> 
+ 
+<!ATTLIST BRANCH	bark (smooth | rough) "rough"> 
+<!ATTLIST LEAF	color ENTITY #REQUIRED> 
+
+<!ENTITY xml	 "Extensible Markup Language"> 
+<!ENTITY % STEM	"(#PCDATA)+"> 
+ 
+<!NOTATION ELM	 SYSTEM ""> 
+]>

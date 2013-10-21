@@ -5,7 +5,7 @@ Bundle-SymbolicName: timezra.eclipse.codemime.ant.core.tests;singleton:=true
 Bundle-Version: 1.1.0.qualifier
 Bundle-Vendor: %providerName
 Fragment-Host: timezra.eclipse.codemime.ant.core;bundle-version="[1.0.0,2.0.0)"
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Require-Bundle: org.junit;bundle-version="[4.5.0,5.0.0)",
  org.eclipse.core.resources;bundle-version="[3.5.0,4.0.0)",
  timezra.eclipse.codemime.tests;bundle-version="[1.0.0,2.0.0)"

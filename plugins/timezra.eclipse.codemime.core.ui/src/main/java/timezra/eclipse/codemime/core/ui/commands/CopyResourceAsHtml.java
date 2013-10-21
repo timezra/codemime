@@ -50,4 +50,6 @@ public abstract class CopyResourceAsHtml<T> extends CopyAsHtml {
 	}
 
 	protected abstract IPath getPath(final ExecutionEvent event);
+
+	protected abstract String getName(final ExecutionEvent event);
 }

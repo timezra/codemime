@@ -28,6 +28,6 @@ public class CopyPropertiesFileAsHtml extends CopySimpleResourceAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new PropertiesHtmlGenerator();
+		return new PropertiesHtmlGenerator(getName(event));
 	}
 }

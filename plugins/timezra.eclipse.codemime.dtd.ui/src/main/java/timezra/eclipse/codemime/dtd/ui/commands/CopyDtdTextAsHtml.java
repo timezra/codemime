@@ -28,6 +28,6 @@ public class CopyDtdTextAsHtml extends CopyTextAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new DtdHtmlGenerator();
+		return new DtdHtmlGenerator(getTitle(event));
 	}
 }

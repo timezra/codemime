@@ -19,4 +19,5 @@ public abstract class SimpleFileHtmlGeneratorTest extends HtmlGeneratorTest {
 	}
 
 	protected abstract String getTheFileName();
+
 }

@@ -22,7 +22,7 @@ import timezra.eclipse.codemime.core.ui.commands.CopyTextAsHtml;
 public class CopyAntTextAsHtml extends CopyTextAsHtml {
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new AntHtmlGenerator();
+		return new AntHtmlGenerator(getTitle(event));
 	}
 
 	@Override

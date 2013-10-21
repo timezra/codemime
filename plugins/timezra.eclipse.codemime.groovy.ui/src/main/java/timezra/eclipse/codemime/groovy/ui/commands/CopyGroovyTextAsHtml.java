@@ -22,6 +22,6 @@ public class CopyGroovyTextAsHtml extends CopyTextAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new GroovyHtmlGenerator(getProject(getEditorInput(event)));
+		return new GroovyHtmlGenerator(getTitle(event), getProject(getEditorInput(event)));
 	}
 }

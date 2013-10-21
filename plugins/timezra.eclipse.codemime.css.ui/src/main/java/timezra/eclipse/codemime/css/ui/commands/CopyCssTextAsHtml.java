@@ -27,6 +27,6 @@ public class CopyCssTextAsHtml extends CopyTextAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new CssHtmlGenerator();
+		return new CssHtmlGenerator(getTitle(event));
 	}
 }

@@ -28,6 +28,6 @@ public class CopyXmlTextAsHtml extends CopyTextAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new XmlHtmlGenerator();
+		return new XmlHtmlGenerator(getTitle(event));
 	}
 }

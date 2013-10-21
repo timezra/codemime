@@ -1,9 +1,12 @@
 package timezra.eclipse.codemime.tests.generator;
 
+import static org.apache.commons.io.FileUtils.readFileToString;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
 import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
 
 import org.eclipse.core.resources.IContainer;
 import org.eclipse.core.resources.IFile;
@@ -33,7 +36,7 @@ public abstract class HtmlGeneratorTest {
 
 	protected static final String EOL = System.getProperty("line.separator");
 	protected static final int FONT_HEIGHT = 10;
-	protected static final String FONT_NAME = "courier new";
+	protected static final String FONT_NAME = "monospace";
 	protected static final IProgressMonitor NULL_PROGRESS_MONITOR = new NullProgressMonitor();
 	private IProject theProject;
 
@@ -54,6 +57,7 @@ public abstract class HtmlGeneratorTest {
 
 		final CodeMimeGenerator theGenerator = createTheGenerator();
 		theGenerator.setFont(new FontData(FONT_NAME, FONT_HEIGHT, SWT.NORMAL));
+		theGenerator.setTabWidth(4);
 		final IDocumentProvider theDocumentProvider = getTheDocumentProvider(theEditor);
 		final String theActualHtml = theGenerator.generate(theDocumentProvider.getDocument(theEditor.getEditorInput()),
 				new Region(0, getTheFileContents().length()));
@@ -92,4 +96,13 @@ public abstract class HtmlGeneratorTest {
 	protected abstract String getTheExpectedHtml();
 
 	protected abstract String getTheFileContents();
+
+	protected final String getTheTestResourceContents(final String fileName) {
+		try {
+			return readFileToString(new File(new File("src/test/resources"), fileName)).replaceAll("\\r\\n|\\r|\\n",
+					EOL);
+		} catch (final IOException e) {
+			throw new IllegalArgumentException("Unable to open the file " + fileName, e);
+		}
+	}
 }

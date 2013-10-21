@@ -36,6 +36,10 @@ public abstract class CopyTextAsHtml extends CopyAsHtml {
 		return new Region(selection.getOffset(), selection.getLength());
 	}
 
+	protected final String getTitle(final ExecutionEvent event) {
+		return getEditor(event).getTitle();
+	}
+
 	private ITextEditor getEditor(final ExecutionEvent event) {
 		return (ITextEditor) HandlerUtil.getActiveEditor(event).getAdapter(ITextEditor.class);
 	}

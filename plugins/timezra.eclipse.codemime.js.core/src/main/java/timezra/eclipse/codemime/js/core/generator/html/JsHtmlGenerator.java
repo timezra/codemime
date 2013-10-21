@@ -18,8 +18,8 @@ import timezra.eclipse.codemime.core.generator.html.RepairingHtmlGenerator;
 @SuppressWarnings("restriction")
 public class JsHtmlGenerator extends RepairingHtmlGenerator {
 
-	public JsHtmlGenerator() {
-		super(IJavaScriptPartitions.JAVA_PARTITIONING);
+	public JsHtmlGenerator(final String title) {
+		super(title, IJavaScriptPartitions.JAVA_PARTITIONING);
 
 		final JavaScriptTextTools tools = JavaScriptPlugin.getDefault().getJavaTextTools();
 

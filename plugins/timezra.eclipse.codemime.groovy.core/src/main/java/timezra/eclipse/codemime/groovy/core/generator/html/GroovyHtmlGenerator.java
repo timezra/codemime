@@ -40,8 +40,8 @@ import timezra.eclipse.codemime.groovy.core.Activator;
 @SuppressWarnings("restriction")
 public class GroovyHtmlGenerator extends RepairingHtmlGenerator {
 
-	public GroovyHtmlGenerator(final IProject project) {
-		super(IJavaPartitions.JAVA_PARTITIONING);
+	public GroovyHtmlGenerator(final String title, final IProject project) {
+		super(title, IJavaPartitions.JAVA_PARTITIONING);
 
 		final IColorManager colorManager = GroovyPlugin.getDefault().getTextTools().getColorManager();
 		final IPreferenceStore preferenceStore = GroovyPlugin.getDefault().getPreferenceStore();

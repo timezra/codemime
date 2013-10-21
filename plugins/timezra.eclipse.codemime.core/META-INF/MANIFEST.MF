@@ -4,12 +4,13 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: timezra.eclipse.codemime.core;singleton:=true
 Bundle-Version: 1.1.0.qualifier
 Bundle-Vendor: %providerName
-Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Bundle-Activator: timezra.eclipse.codemime.core.Activator
 Require-Bundle: org.eclipse.ui;bundle-version="[3.5.0,4.0.0)",
  org.eclipse.core.runtime;bundle-version="[3.5.0,4.0.0)",
  org.eclipse.text;bundle-version="[3.5.0,4.0.0)",
- org.eclipse.jface.text;bundle-version="[3.5.0,4.0.0)"
+ org.eclipse.jface.text;bundle-version="[3.5.0,4.0.0)",
+ org.apache.commons.lang;bundle-version="[2.6.0,3.0.0)"
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
 Export-Package: timezra.eclipse.codemime.core.generator,

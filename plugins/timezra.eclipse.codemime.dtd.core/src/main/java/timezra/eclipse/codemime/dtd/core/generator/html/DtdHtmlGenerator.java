@@ -21,8 +21,8 @@ import timezra.eclipse.codemime.sse.core.generator.html.StructuredTextHtmlGenera
  */
 public class DtdHtmlGenerator extends StructuredTextHtmlGenerator {
 
-	public DtdHtmlGenerator() {
-		super(new StructuredTextViewerConfigurationDTD());
+	public DtdHtmlGenerator(final String title) {
+		super(title, new StructuredTextViewerConfigurationDTD());
 	}
 
 }

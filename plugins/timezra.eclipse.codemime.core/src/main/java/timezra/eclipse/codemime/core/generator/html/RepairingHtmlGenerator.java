@@ -35,7 +35,8 @@ public abstract class RepairingHtmlGenerator extends AbstractHtmlGenerator {
 	protected String partitioning;
 	protected Map<String, IPresentationRepairer> repairers;
 
-	public RepairingHtmlGenerator(final String partitioning) {
+	public RepairingHtmlGenerator(final String title, final String partitioning) {
+		super(title);
 		this.partitioning = partitioning;
 		repairers = new HashMap<String, IPresentationRepairer>();
 	}

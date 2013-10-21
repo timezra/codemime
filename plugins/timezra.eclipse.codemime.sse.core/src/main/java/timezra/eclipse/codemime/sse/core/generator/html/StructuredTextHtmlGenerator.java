@@ -31,7 +31,8 @@ public abstract class StructuredTextHtmlGenerator extends AbstractHtmlGenerator 
 
 	private final StructuredTextViewerConfiguration config;
 
-	public StructuredTextHtmlGenerator(final StructuredTextViewerConfiguration config) {
+	public StructuredTextHtmlGenerator(final String title, final StructuredTextViewerConfiguration config) {
+		super(title);
 		this.config = config;
 	}
 

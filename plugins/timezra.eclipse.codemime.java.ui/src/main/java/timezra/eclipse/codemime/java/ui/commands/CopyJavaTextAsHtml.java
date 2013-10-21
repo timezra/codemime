@@ -28,6 +28,6 @@ public class CopyJavaTextAsHtml extends CopyTextAsHtml {
 
 	@Override
 	protected CodeMimeGenerator createGenerator(final ExecutionEvent event) {
-		return new JavaHtmlGenerator();
+		return new JavaHtmlGenerator(getTitle(event));
 	}
 }
