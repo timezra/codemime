@@ -89,6 +89,10 @@
     <module>timezra.eclipse.codemime.groovy.core.tests</module>
     <module>timezra.eclipse.codemime.groovy.ui</module>
     <module>timezra.eclipse.codemime.groovy.ui.tests</module>
+    <module>timezra.eclipse.codemime.scala.core</module>
+    <module>timezra.eclipse.codemime.scala.core.tests</module>
+    <module>timezra.eclipse.codemime.scala.ui</module>
+    <module>timezra.eclipse.codemime.scala.ui.tests</module>
     <module>timezra.eclipse.codemime.js.core</module>
     <module>timezra.eclipse.codemime.js.core.tests</module>
     <module>timezra.eclipse.codemime.js.ui</module>

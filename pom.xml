@@ -52,6 +52,7 @@
 			<properties>
 				<eclipse-p2-repository-url>http://download.eclipse.org/releases/kepler/</eclipse-p2-repository-url>
 				<greclipse-p2-repository-url>http://dist.springsource.org/release/GRECLIPSE/e4.3/</greclipse-p2-repository-url>
+        <scala-ide-p2-repository-url>http://download.scala-ide.org/sdk/e38/scala210/stable/site/</scala-ide-p2-repository-url>
 			</properties>
 		</profile>
 		<profile>
@@ -63,6 +64,7 @@
 				<juno-active>true</juno-active>
 				<eclipse-p2-repository-url>http://download.eclipse.org/releases/juno/</eclipse-p2-repository-url>
 				<greclipse-p2-repository-url>http://dist.springsource.org/release/GRECLIPSE/e4.2/</greclipse-p2-repository-url>
+				<scala-ide-p2-repository-url>http://download.scala-ide.org/sdk/e38/scala210/stable/site/</scala-ide-p2-repository-url>
 			</properties>
 		</profile>
 	</profiles>
@@ -123,6 +125,11 @@
 			<id>greclipse-p2-repository</id>
 			<layout>p2</layout>
 			<url>${greclipse-p2-repository-url}</url>
+		</repository>
+		<repository>
+			<id>scala-ide-p2-repository</id>
+			<layout>p2</layout>
+			<url>${scala-ide-p2-repository-url}</url>
 		</repository>
 	</repositories>
 

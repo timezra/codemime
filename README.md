@@ -20,6 +20,7 @@ Copying from the following types is supported:
  - JavaScript
  - Maven
  - Properties
+ - Scala
  - XML
 
 ### Examples: ###

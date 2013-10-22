@@ -46,6 +46,8 @@
     <module>timezra.eclipse.codemime.java.source.feature</module>
     <module>timezra.eclipse.codemime.groovy.feature</module>
     <module>timezra.eclipse.codemime.groovy.source.feature</module>
+    <module>timezra.eclipse.codemime.scala.feature</module>
+    <module>timezra.eclipse.codemime.scala.source.feature</module>
     <module>timezra.eclipse.codemime.js.feature</module>
     <module>timezra.eclipse.codemime.js.source.feature</module>
     <module>timezra.eclipse.codemime.maven.feature</module>
