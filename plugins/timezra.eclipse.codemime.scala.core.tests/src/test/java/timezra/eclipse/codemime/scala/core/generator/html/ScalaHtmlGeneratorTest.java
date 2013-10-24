@@ -44,40 +44,6 @@ public class ScalaHtmlGeneratorTest extends JavaFileHtmlGeneratorTest {
 		});
 	}
 
-	// private static void doCloseDiagnosticWindows() {
-	// final Shell[] shells = Display.getDefault().getShells();
-	// for (final Shell s : shells) {
-	// if (!s.isDisposed()) {
-	// final String title = s.getText();
-	// if ("Run Scala Setup Diagnostics?".equals(title)) {
-	// final Button defaultButton = s.getDefaultButton();
-	// final Control[] children = defaultButton.getParent().getChildren();
-	// for (final Control child : children) {
-	// if (child instanceof Button && "Never".equals(((Button) child).getText())) {
-	// child.notifyListeners(SWT.Selection, new Event());
-	// return;
-	// }
-	// }
-	// }
-	// }
-	// }
-	// }
-	//
-	// @AfterClass
-	// public static void closeDiagnosticsWindows() {
-	// doCloseDiagnosticWindows();
-	// }
-	//
-	// @After
-	// public void reallyCloseDiagnosticsWindows() {
-	// doCloseDiagnosticWindows();
-	// }
-	//
-	// @Before
-	// public void preCloseDiagnosticsWindows() {
-	// doCloseDiagnosticWindows();
-	// }
-
 	@Override
 	protected String getTheType() {
 		return "scala";

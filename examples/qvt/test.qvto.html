@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>test.qvto</title>
+<style type="text/css">
+div.cm_source {
+  overflow: auto;
+  padding: 1em;
+  background-color: white;
+  border-style: dashed;
+  border-width: thin;
+  font-family: monospace;
+  font-size: 10pt;
+}
+span.cm_b_n_n_7F0055 {
+  font-weight: bold;
+  color: #7F0055;
+}
+span.cm_n_n_n_0 {
+  color: #000000;
+}
+span.cm_n_n_n_2A00FF {
+  color: #2A00FF;
+}
+span.cm_n_i_n_3F7F5F {
+  font-style: italic;
+  color: #3F7F5F;
+}
+span.cm_n_n_n_3F5FBF {
+  color: #3F5FBF;
+}
+span.cm_b_n_n_7F9FBF {
+  font-weight: bold;
+  color: #7F9FBF;
+}
+</style>
+</head>
+<body>
+<div class="cm_source">
+<span class="cm_b_n_n_7F0055">modeltype</span>&nbsp;<span class="cm_n_n_n_0">ECORE</span>&nbsp;<span class="cm_b_n_n_7F0055">uses</span>&nbsp;<span class="cm_n_n_n_2A00FF">&quot;http://www.eclipse.org/emf/2002/Ecore&quot;</span><span class="cm_n_n_n_0">;</span><br />
+  <br />
+  <span class="cm_b_n_n_7F0055">transformation</span>&nbsp;<span class="cm_n_n_n_0">Simple(</span><span class="cm_b_n_n_7F0055">inout</span>&nbsp;<span class="cm_n_n_n_0">model</span>&nbsp;<span class="cm_n_n_n_0">:</span>&nbsp;<span class="cm_n_n_n_0">ECORE);</span><br />
+  <br />
+  <span class="cm_b_n_n_7F0055">intermediate</span>&nbsp;<span class="cm_b_n_n_7F0055">class</span>&nbsp;<span class="cm_n_n_n_0">ExtraData</span>&nbsp;<span class="cm_n_n_n_0">{</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_n_n_0">oldName</span>&nbsp;<span class="cm_n_n_n_0">:</span>&nbsp;<span class="cm_n_n_n_0">String;</span><br />
+  <span class="cm_n_n_n_0">}</span><br />
+  <br />
+  <span class="cm_b_n_n_7F0055">intermediate</span>&nbsp;<span class="cm_b_n_n_7F0055">property</span>&nbsp;<span class="cm_n_n_n_0">EPackage::extra</span>&nbsp;<span class="cm_n_n_n_0">:</span>&nbsp;<span class="cm_n_n_n_0">ExtraData;</span><br />
+  <br />
+  <span class="cm_b_n_n_7F0055">main</span><span class="cm_n_n_n_0">()</span>&nbsp;<span class="cm_n_n_n_0">{</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_i_n_3F7F5F">//</span>&nbsp;<span class="cm_n_i_n_3F7F5F">try</span>&nbsp;<span class="cm_n_i_n_3F7F5F">calling</span>&nbsp;<span class="cm_n_i_n_3F7F5F">a</span>&nbsp;<span class="cm_n_i_n_3F7F5F">simple</span>&nbsp;<span class="cm_n_i_n_3F7F5F">mapping</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_n_n_0">model.objects()[EPackage]-&gt;</span><span class="cm_b_n_n_7F0055">map</span>&nbsp;<span class="cm_n_n_n_0">toNewPackage();</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_b_n_n_7F0055">var</span>&nbsp;<span class="cm_n_n_n_0">i</span>&nbsp;<span class="cm_n_n_n_0">:=</span>&nbsp;<span class="cm_n_n_n_0">80</span>&nbsp;<span class="cm_n_n_n_0">*</span>&nbsp;<span class="cm_n_n_n_0">2.5;</span>&nbsp;&nbsp;&nbsp;&nbsp;<br />
+  <span class="cm_n_n_n_0">}</span><br />
+  <br />
+  <span class="cm_n_n_n_3F5FBF">/**</span><br />
+  &nbsp;<span class="cm_n_n_n_3F5FBF">*</span>&nbsp;<span class="cm_b_n_n_7F9FBF">FIXME</span>&nbsp;<span class="cm_n_n_n_3F5FBF">-</span>&nbsp;<span class="cm_n_n_n_3F5FBF">just</span>&nbsp;<span class="cm_n_n_n_3F5FBF">a</span>&nbsp;<span class="cm_n_n_n_3F5FBF">simple</span>&nbsp;<span class="cm_n_n_n_3F5FBF">mapping</span>&nbsp;<span class="cm_n_n_n_3F5FBF">to</span>&nbsp;<span class="cm_n_n_n_3F5FBF">try</span><br />
+  &nbsp;<span class="cm_n_n_n_3F5FBF">*/</span><br />
+  <span class="cm_b_n_n_7F0055">mapping</span>&nbsp;<span class="cm_n_n_n_0">EPackage::toNewPackage()</span>&nbsp;<span class="cm_n_n_n_0">:</span>&nbsp;<span class="cm_n_n_n_0">EPackage</span>&nbsp;<span class="cm_n_n_n_0">{</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_n_n_0">extra</span>&nbsp;<span class="cm_n_n_n_0">:=</span>&nbsp;<span class="cm_b_n_n_7F0055">object</span>&nbsp;<span class="cm_n_n_n_0">ExtraData@model</span>&nbsp;<span class="cm_n_n_n_0">{</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_n_n_0">oldName</span>&nbsp;<span class="cm_n_n_n_0">:=</span>&nbsp;<span class="cm_b_n_n_7F0055">self</span><span class="cm_n_n_n_0">.name;</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_n_n_0">};</span><br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_n_n_n_0">name</span>&nbsp;<span class="cm_n_n_n_0">:=</span>&nbsp;<span class="cm_b_n_n_7F0055">self</span><span class="cm_n_n_n_0">.name.firstToUpper();</span><br />
+  <br />
+  &nbsp;&nbsp;&nbsp;&nbsp;<span class="cm_b_n_n_7F0055">assert</span>&nbsp;<span class="cm_n_n_n_0">fatal</span>&nbsp;<span class="cm_n_n_n_0">(</span><span class="cm_b_n_n_7F0055">result</span><span class="cm_n_n_n_0">.name</span>&nbsp;<span class="cm_n_n_n_0">&lt;&gt;</span>&nbsp;<span class="cm_b_n_n_7F0055">null</span><span class="cm_n_n_n_0">);</span><br />
+  <span class="cm_n_n_n_0">}</span><br />
+  
+</div>
+</body>
+</html>

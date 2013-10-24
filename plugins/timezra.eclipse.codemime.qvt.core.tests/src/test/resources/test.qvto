@@ -1,0 +1,27 @@
+modeltype ECORE uses "http://www.eclipse.org/emf/2002/Ecore";
+
+transformation Simple(inout model : ECORE);
+
+intermediate class ExtraData {
+	 oldName : String;
+}
+
+intermediate property EPackage::extra : ExtraData;
+
+main() {
+	// try calling a simple mapping
+	model.objects()[EPackage]->map toNewPackage();
+	var i := 80 * 2.5;	
+}
+
+/**
+ * FIXME - just a simple mapping to try
+ */
+mapping EPackage::toNewPackage() : EPackage {
+	extra := object ExtraData@model {
+		oldName := self.name;
+	};
+	name := self.name.firstToUpper();
+
+	assert fatal (result.name <> null);
+}
