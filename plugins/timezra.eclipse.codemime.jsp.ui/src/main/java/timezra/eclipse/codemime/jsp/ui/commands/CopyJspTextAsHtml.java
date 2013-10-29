@@ -10,7 +10,7 @@ public class CopyJspTextAsHtml extends CopyTextAsHtml {
 
 	@Override
 	protected String getFontPreferenceName() {
-		return "org.eclipse.jface.textfont";
+		return "org.eclipse.wst.sse.ui.textfont";
 	}
 
 	@Override
