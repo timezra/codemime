@@ -18,6 +18,7 @@ Copying from the following types is supported:
  - HTML
  - Java
  - JavaScript
+ - JSP
  - Maven
  - Properties
  - QVT

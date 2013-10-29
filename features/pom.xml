@@ -52,6 +52,8 @@
     <module>timezra.eclipse.codemime.js.source.feature</module>
     <module>timezra.eclipse.codemime.qvt.feature</module>
     <module>timezra.eclipse.codemime.qvt.source.feature</module>
+    <module>timezra.eclipse.codemime.jsp.feature</module>
+    <module>timezra.eclipse.codemime.jsp.source.feature</module>
     <module>timezra.eclipse.codemime.maven.feature</module>
     <module>timezra.eclipse.codemime.maven.source.feature</module>
   </modules>

@@ -101,6 +101,10 @@
     <module>timezra.eclipse.codemime.qvt.core.tests</module>
     <module>timezra.eclipse.codemime.qvt.ui</module>
     <module>timezra.eclipse.codemime.qvt.ui.tests</module>
+    <module>timezra.eclipse.codemime.jsp.core</module>
+    <module>timezra.eclipse.codemime.jsp.core.tests</module>
+    <module>timezra.eclipse.codemime.jsp.ui</module>
+    <module>timezra.eclipse.codemime.jsp.ui.tests</module>
     <module>timezra.eclipse.codemime.maven.ui</module>
     <module>timezra.eclipse.codemime.maven.ui.tests</module>
   </modules>

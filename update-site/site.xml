@@ -135,6 +135,17 @@
          Code Mime for Qvt
       </description>
    </category-def>
+   <feature url="features/timezra.eclipse.codemime.jsp.feature_1.1.0.qualifier.jar" id="timezra.eclipse.codemime.jsp.feature" version="1.1.0.qualifier">
+      <category name="timezra.eclipse.codemime.jsp_category"/>
+   </feature>
+   <feature url="features/timezra.eclipse.codemime.jsp.source.feature_1.1.0.qualifier.jar" id="timezra.eclipse.codemime.jsp.source.feature" version="1.1.0.qualifier">
+      <category name="timezra.eclipse.codemime.jsp_category"/>
+   </feature>
+   <category-def name="timezra.eclipse.codemime.jsp_category" label="Code Mime for Jsp">
+      <description>
+         Code Mime for Jsp
+      </description>
+   </category-def>
    <feature url="features/timezra.eclipse.codemime.js.feature_1.1.0.qualifier.jar" id="timezra.eclipse.codemime.js.feature" version="1.1.0.qualifier">
       <category name="timezra.eclipse.codemime.js_category"/>
    </feature>
