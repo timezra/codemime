@@ -41,7 +41,6 @@
       <import plugin="org.eclipse.ui.ide" version="3.5.0" match="compatible"/>
       <import plugin="timezra.eclipse.codemime.core.ui" version="1.0.0" match="compatible"/>
       <import plugin="timezra.eclipse.codemime.groovy.core" version="1.0.0" match="compatible"/>
-      <import plugin="org.eclipse.jdt.core" version="3.9.0" match="compatible"/>
    </requires>
 
    <plugin

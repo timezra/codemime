@@ -7,6 +7,5 @@ Bundle-Vendor: %providerName
 Fragment-Host: timezra.eclipse.codemime.sql.core;bundle-version="[1.0.0,2.0.0)"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Require-Bundle: org.junit;bundle-version="[4.5.0,5.0.0)",
- timezra.eclipse.codemime.tests;bundle-version="[1.0.0,2.0.0)",
- timezra.eclipse.codemime.java.tests;bundle-version="[1.0.0,2.0.0)"
+ timezra.eclipse.codemime.tests;bundle-version="[1.0.0,2.0.0)"
 Bundle-Localization: plugin

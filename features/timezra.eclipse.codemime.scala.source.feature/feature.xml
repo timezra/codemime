@@ -36,6 +36,7 @@
       <import plugin="timezra.eclipse.codemime.java.tests" version="1.0.0" match="compatible"/>
       <import plugin="timezra.eclipse.codemime.scala.core" version="1.0.0" match="compatible"/>
       <import plugin="timezra.eclipse.codemime.scala.ui" version="1.0.0" match="compatible"/>
+      <import plugin="org.aspectj.weaver" version="1.7.3" match="compatible"/>
    </requires>
 
    <plugin
