@@ -23,6 +23,7 @@ Copying from the following types is supported:
  - Properties
  - QVT
  - Scala
+ - SQL
  - XML
 
 ### Examples: ###
