@@ -46,10 +46,14 @@ public abstract class CopyResourceAsHtml<T> extends CopyAsHtml {
 
 	@Override
 	protected final IRegion getRegion(final ExecutionEvent event, final IDocument document) {
-		return new Region(0, getDocument(event).getLength());
+		return new Region(0, setup(getDocument(event)).getLength());
 	}
 
 	protected abstract IPath getPath(final ExecutionEvent event);
 
 	protected abstract String getName(final ExecutionEvent event);
+
+	protected IDocument setup(final IDocument document) {
+		return document;
+	}
 }

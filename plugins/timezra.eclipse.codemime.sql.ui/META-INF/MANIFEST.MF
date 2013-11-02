@@ -12,6 +12,7 @@ Require-Bundle: org.eclipse.ui;bundle-version="[3.5.0,4.0.0)",
  org.eclipse.jface.text;bundle-version="[3.5.0,4.0.0)",
  timezra.eclipse.codemime.core;bundle-version="[1.0.0,2.0.0)",
  timezra.eclipse.codemime.core.ui;bundle-version="[1.0.0,2.0.0)",
+ org.eclipse.datatools.sqltools.sqleditor;bundle-version="[1.0.0,2.0.0)",
  timezra.eclipse.codemime.sql.core;bundle-version="[1.0.0,2.0.0)"
 Bundle-ActivationPolicy: lazy
 Bundle-Localization: plugin
