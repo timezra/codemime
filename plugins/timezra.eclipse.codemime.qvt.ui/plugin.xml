@@ -41,7 +41,7 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="false"
-            locationURI="popup:org.eclipse.m2m.qvt.oml.editor.ui.QvtEditor.EditorContext?endof=group.edit">
+            locationURI="popup:org.eclipse.m2m.qvt.oml.editor.ui.QvtEditor.EditorContext?endof=group.copy">
          <menu
                icon="icons/full/etool16/copy_as_html_edit.gif"
                id="timezra.eclipse.codemime.qvt.ui.copyTextAs"

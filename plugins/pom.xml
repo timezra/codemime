@@ -107,5 +107,9 @@
     <module>timezra.eclipse.codemime.jsp.ui.tests</module>
     <module>timezra.eclipse.codemime.maven.ui</module>
     <module>timezra.eclipse.codemime.maven.ui.tests</module>
+    <module>timezra.eclipse.codemime.sql.core</module>
+    <module>timezra.eclipse.codemime.sql.core.tests</module>
+    <module>timezra.eclipse.codemime.sql.ui</module>
+    <module>timezra.eclipse.codemime.sql.ui.tests</module>
   </modules>
 </project>

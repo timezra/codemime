@@ -40,7 +40,7 @@
          point="org.eclipse.ui.menus">
       <menuContribution
             allPopups="false"
-            locationURI="popup:#JavaScriptEditorContext?endof=group.edit">
+            locationURI="popup:#JavaScriptEditorContext?endof=group.copy">
          <menu
                icon="icons/full/etool16/copy_as_html_edit.gif"
                id="timezra.eclipse.codemime.js.ui.copyTextAs"
