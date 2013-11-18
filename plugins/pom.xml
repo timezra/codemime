@@ -1,53 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<artifactId>timezra.eclipse.codemime.plugins</artifactId>
-	<packaging>pom</packaging>
-	<name>timezra.eclipse.codemime.plugins</name>
-	<description>Parent project for the timezra.eclipse.codemime plug-in and fragment projects</description>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <artifactId>timezra.eclipse.codemime.plugins</artifactId>
+  <packaging>pom</packaging>
+  <name>timezra.eclipse.codemime.plugins</name>
+  <description>Parent project for the timezra.eclipse.codemime plug-in and fragment projects</description>
 
-	<parent>
-		<groupId>timezra.eclipse</groupId>
-		<artifactId>timezra.eclipse.codemime.parent</artifactId>
-		<version>1.1.1-SNAPSHOT</version>
-	</parent>
+  <parent>
+    <groupId>timezra.eclipse</groupId>
+    <artifactId>timezra.eclipse.codemime.parent</artifactId>
+    <version>1.1.1-SNAPSHOT</version>
+  </parent>
 
-	<properties>
-		<maven.compiler.source>1.7</maven.compiler.source>
-		<maven.compiler.target>1.7</maven.compiler.target>
-	</properties>
+  <properties>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
 
-	<profiles>
-		<profile>
-			<id>sign</id>
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-jarsigner-plugin</artifactId>
-					</plugin>
-				</plugins>
-			</build>
-		</profile>
-	</profiles>
+  <profiles>
+    <profile>
+      <id>sign</id>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-jarsigner-plugin</artifactId>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+  </profiles>
 
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.eclipse.tycho</groupId>
-				<artifactId>tycho-source-plugin</artifactId>
-				<version>${tycho-version}</version>
-				<executions>
-					<execution>
-						<id>plugin-source</id>
-						<goals>
-							<goal>plugin-source</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
-		</plugins>
-	</build>
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.eclipse.tycho</groupId>
+        <artifactId>tycho-source-plugin</artifactId>
+        <version>${tycho-version}</version>
+        <executions>
+          <execution>
+            <id>plugin-source</id>
+            <goals>
+              <goal>plugin-source</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
   <modules>
     <module>timezra.eclipse.codemime.core</module>
     <module>timezra.eclipse.codemime.tests</module>
@@ -111,5 +112,9 @@
     <module>timezra.eclipse.codemime.sql.core.tests</module>
     <module>timezra.eclipse.codemime.sql.ui</module>
     <module>timezra.eclipse.codemime.sql.ui.tests</module>
+    <module>timezra.eclipse.codemime.python.core</module>
+    <module>timezra.eclipse.codemime.python.core.tests</module>
+    <module>timezra.eclipse.codemime.python.ui</module>
+    <module>timezra.eclipse.codemime.python.ui.tests</module>
   </modules>
 </project>

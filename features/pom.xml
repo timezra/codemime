@@ -58,5 +58,7 @@
     <module>timezra.eclipse.codemime.jsp.source.feature</module>
     <module>timezra.eclipse.codemime.maven.feature</module>
     <module>timezra.eclipse.codemime.maven.source.feature</module>
+    <module>timezra.eclipse.codemime.python.feature</module>
+    <module>timezra.eclipse.codemime.python.source.feature</module>
   </modules>
 </project>
