@@ -21,6 +21,7 @@ Copying from the following types is supported:
  - JSP
  - Maven
  - Properties
+ - Python
  - QVT
  - Scala
  - SQL
