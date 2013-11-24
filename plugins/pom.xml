@@ -55,12 +55,12 @@
     <module>timezra.eclipse.codemime.core.tests</module>
     <module>timezra.eclipse.codemime.core.ui</module>
     <module>timezra.eclipse.codemime.core.ui.tests</module>
+    <module>timezra.eclipse.codemime.sse.core</module>
+    <module>timezra.eclipse.codemime.sse.core.tests</module>
     <module>timezra.eclipse.codemime.ant.core</module>
     <module>timezra.eclipse.codemime.ant.core.tests</module>
     <module>timezra.eclipse.codemime.ant.ui</module>
     <module>timezra.eclipse.codemime.ant.ui.tests</module>
-    <module>timezra.eclipse.codemime.sse.core</module>
-    <module>timezra.eclipse.codemime.sse.core.tests</module>
     <module>timezra.eclipse.codemime.css.core</module>
     <module>timezra.eclipse.codemime.css.core.tests</module>
     <module>timezra.eclipse.codemime.css.ui</module>
@@ -116,5 +116,9 @@
     <module>timezra.eclipse.codemime.python.core.tests</module>
     <module>timezra.eclipse.codemime.python.ui</module>
     <module>timezra.eclipse.codemime.python.ui.tests</module>
+    <module>timezra.eclipse.codemime.php.core</module>
+    <module>timezra.eclipse.codemime.php.core.tests</module>
+    <module>timezra.eclipse.codemime.php.ui</module>
+    <module>timezra.eclipse.codemime.php.ui.tests</module>
   </modules>
 </project>

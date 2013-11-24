@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>HelloWorld.php</title>
+<style type="text/css">
+div.cm_source {
+  overflow: auto;
+  padding: 1em;
+  background-color: white;
+  border-style: dashed;
+  border-width: thin;
+  font-family: monospace;
+  font-size: 10pt;
+}
+span.cm_n_n_n_8080 {
+  color: #008080;
+}
+span.cm_n_n_n_3F7F7F {
+  color: #3F7F7F;
+}
+span.cm_n_n_n_7F007F {
+  color: #7F007F;
+}
+span.cm_n_i_n_2A00FF {
+  font-style: italic;
+  color: #2A00FF;
+}
+span.cm_n_n_n_3F5FBF {
+  color: #3F5FBF;
+}
+span.cm_n_n_n_FF0000 {
+  color: #FF0000;
+}
+span.cm_n_n_n_0 {
+  color: #000000;
+}
+span.cm_n_n_n_C0 {
+  color: #0000C0;
+}
+span.cm_b_n_n_7F0055 {
+  font-weight: bold;
+  color: #7F0055;
+}
+span.cm_n_n_n_3F55BF {
+  color: #3F55BF;
+}
+span.cm_b_n_n_7F9FBF {
+  font-weight: bold;
+  color: #7F9FBF;
+}
+span.cm_n_n_n_557F5F {
+  color: #557F5F;
+}
+span.cm_n_n_n_8282 {
+  color: #008282;
+}
+</style>
+</head>
+<body>
+<div class="cm_source">
+<span class="cm_n_n_n_8080">&lt;</span><span class="cm_n_n_n_3F7F7F">html</span><span class="cm_n_n_n_8080">&gt;</span><br />
+  <span class="cm_n_n_n_8080">&lt;</span><span class="cm_n_n_n_3F7F7F">head</span><span class="cm_n_n_n_8080">&gt;</span><br />
+  <span class="cm_n_n_n_8080">&lt;</span><span class="cm_n_n_n_3F7F7F">meta</span>&nbsp;<span class="cm_n_n_n_7F007F">http-equiv</span>=<span class="cm_n_i_n_2A00FF">&quot;Content-Type&quot;</span>&nbsp;<span class="cm_n_n_n_7F007F">content</span>=<span class="cm_n_i_n_2A00FF">&quot;text/html;&nbsp;charset=UTF-8&quot;</span>&nbsp;<span class="cm_n_n_n_8080">/&gt;</span><br />
+  <span class="cm_n_n_n_8080">&lt;</span><span class="cm_n_n_n_3F7F7F">title</span><span class="cm_n_n_n_8080">&gt;</span>Hello,&nbsp;World!<span class="cm_n_n_n_8080">&lt;/</span><span class="cm_n_n_n_3F7F7F">title</span><span class="cm_n_n_n_8080">&gt;</span><br />
+  <span class="cm_n_n_n_8080">&lt;/</span><span class="cm_n_n_n_3F7F7F">head</span><span class="cm_n_n_n_8080">&gt;</span><br />
+  <span class="cm_n_n_n_8080">&lt;</span><span class="cm_n_n_n_3F7F7F">body</span><span class="cm_n_n_n_8080">&gt;</span><br />
+  <span class="cm_n_n_n_3F5FBF">&lt;!--</span><span class="cm_n_n_n_3F5FBF">&nbsp;Hello,&nbsp;World!&nbsp;</span><span class="cm_n_n_n_3F5FBF">--&gt;</span><br />
+  <span class="cm_n_n_n_FF0000">&lt;?php</span><span class="cm_n_n_n_0"><br />
+  define&nbsp;(&nbsp;</span><span class="cm_n_n_n_C0">'greeting'</span><span class="cm_n_n_n_0">,&nbsp;</span><span class="cm_n_n_n_C0">&quot;Hello&quot;&nbsp;</span><span class="cm_n_n_n_0">);<br />
+  $GLOBALS&nbsp;[</span><span class="cm_n_n_n_C0">'greetee'</span><span class="cm_n_n_n_0">]&nbsp;=&nbsp;</span><span class="cm_n_n_n_C0">&quot;World&quot;</span><span class="cm_n_n_n_0">;<br />
+  </span><span class="cm_b_n_n_7F0055">class&nbsp;</span><span class="cm_n_n_n_0">Greeter&nbsp;{<br />
+  &nbsp;&nbsp;</span><span class="cm_b_n_n_7F0055">var&nbsp;</span><span class="cm_n_n_n_0">$my_greeting;<br />
+  &nbsp;&nbsp;</span><span class="cm_b_n_n_7F0055">public&nbsp;function&nbsp;</span><span class="cm_n_n_n_0">getSalutation()&nbsp;{<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;$this-&gt;my_greeting&nbsp;=&nbsp;Greeter::composeGreeting&nbsp;(&nbsp;greeting,&nbsp;$GLOBALS&nbsp;[</span><span class="cm_n_n_n_C0">'greetee'</span><span class="cm_n_n_n_0">]&nbsp;);<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cm_b_n_n_7F0055">return&nbsp;</span><span class="cm_n_n_n_0">$this-&gt;my_greeting;<br />
+  &nbsp;&nbsp;}<br />
+  &nbsp;&nbsp;</span><span class="cm_b_n_n_7F0055">static&nbsp;function&nbsp;</span><span class="cm_n_n_n_0">composeGreeting($greeting,&nbsp;$greetee)&nbsp;{<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cm_b_n_n_7F0055">return&nbsp;</span><span class="cm_n_n_n_C0">&quot;</span><span class="cm_n_n_n_0">{$greeting}</span><span class="cm_n_n_n_C0">,&nbsp;</span><span class="cm_n_n_n_0">{$greetee}</span><span class="cm_n_n_n_C0">!&quot;</span><span class="cm_n_n_n_0">;<br />
+  &nbsp;&nbsp;}<br />
+  }<br />
+  </span><span class="cm_n_n_n_3F55BF">/**<br />
+  &nbsp;*&nbsp;</span><span class="cm_b_n_n_7F9FBF">@deprecated</span><span class="cm_n_n_n_3F55BF"><br />
+  &nbsp;*&nbsp;</span><span class="cm_b_n_n_7F9FBF">@throws</span><span class="cm_n_n_n_3F55BF">&nbsp;Exception<br />
+  &nbsp;*/</span><span class="cm_n_n_n_0"><br />
+  </span><span class="cm_b_n_n_7F0055">function&nbsp;</span><span class="cm_n_n_n_0">getGreeter()&nbsp;{<br />
+  &nbsp;&nbsp;</span><span class="cm_b_n_n_7F0055">if&nbsp;</span><span class="cm_n_n_n_0">(func_num_args&nbsp;()&nbsp;!=&nbsp;0)&nbsp;{<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cm_b_n_n_7F0055">throw&nbsp;new&nbsp;</span><span class="cm_n_n_n_0">Exception&nbsp;();&nbsp;</span><span class="cm_n_n_n_557F5F">//&nbsp;</span><span class="cm_b_n_n_7F9FBF">TODO</span><span class="cm_n_n_n_557F5F">:&nbsp;message?<br />
+  </span><span class="cm_n_n_n_0">&nbsp;&nbsp;}<br />
+  &nbsp;&nbsp;</span><span class="cm_b_n_n_7F0055">return&nbsp;new&nbsp;</span><span class="cm_n_n_n_0">Greeter&nbsp;();<br />
+  }<br />
+  $salutation&nbsp;=&nbsp;getGreeter&nbsp;()-&gt;getSalutation&nbsp;();<br />
+  $paragraph&nbsp;=&nbsp;</span><span class="cm_n_n_n_8282">&lt;&lt;&lt;P<br />
+  </span><span class="cm_n_n_n_C0">&nbsp;&nbsp;&lt;p&gt;<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;</span><span class="cm_n_n_n_0">$salutation</span><span class="cm_n_n_n_C0"><br />
+  &nbsp;&nbsp;&lt;/p&gt;</span><span class="cm_n_n_n_8282"><br />
+  P;<br />
+  </span><span class="cm_b_n_n_7F0055">print&nbsp;</span><span class="cm_n_n_n_0">$paragraph<br />
+  </span><span class="cm_n_n_n_FF0000">?&gt;</span>&nbsp;<br />
+  <span class="cm_n_n_n_8080">&lt;/</span><span class="cm_n_n_n_3F7F7F">body</span><span class="cm_n_n_n_8080">&gt;</span><br />
+  <span class="cm_n_n_n_8080">&lt;/</span><span class="cm_n_n_n_3F7F7F">html</span><span class="cm_n_n_n_8080">&gt;</span>
+</div>
+</body>
+</html>
