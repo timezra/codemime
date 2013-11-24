@@ -1,5 +1,5 @@
 language: java
-script: "mvn -U verify"
+script: "mvn verify"
 
 before_script:
   - "export DISPLAY=:99.0"
