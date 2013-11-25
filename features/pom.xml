@@ -62,5 +62,7 @@
     <module>timezra.eclipse.codemime.python.source.feature</module>
     <module>timezra.eclipse.codemime.php.feature</module>
     <module>timezra.eclipse.codemime.php.source.feature</module>
+    <module>timezra.eclipse.codemime.c.feature</module>
+    <module>timezra.eclipse.codemime.c.source.feature</module>
   </modules>
 </project>

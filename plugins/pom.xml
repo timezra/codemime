@@ -120,5 +120,9 @@
     <module>timezra.eclipse.codemime.php.core.tests</module>
     <module>timezra.eclipse.codemime.php.ui</module>
     <module>timezra.eclipse.codemime.php.ui.tests</module>
+    <module>timezra.eclipse.codemime.c.core</module>
+    <module>timezra.eclipse.codemime.c.core.tests</module>
+    <module>timezra.eclipse.codemime.c.ui</module>
+    <module>timezra.eclipse.codemime.c.ui.tests</module>
   </modules>
 </project>
